@@ -1,0 +1,33 @@
+# See https://github.com/check-spelling/check-spelling/wiki/Configuration-Examples:-patterns
+
+# uuid:
+\b[0-9a-fA-F]{8}-(?:[0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}\b
+
+# 8 fields 0-4 hex chars : delim
+(?:[0-9a-f]{0,4}:){7}[0-9a-f]{0,4}
+
+# hex digits including css/html color classes:
+(?:[\\0][xX]|\\u|[uU]\+|#x?|\%23)[0-9a-fA-FgGrR_]{2,}(?:[uU]?[lL]{0,2}|u\d+)\b
+
+# commits
+\bcommit\s+[0-9a-f]{12}\b
+\b[0-9a-f]{40}\b
+
+# https://www.gnu.org/software/groff/manual/groff.html
+# man troff content
+\\f[BCIPR]
+
+#
+^AT_CHECK.*
+^NXM_NX_.*
+(?:NXM_NX_CT_MARK_W|NXM_OF_ETH_DST_W|NXM_OF_VLAN_TCI_W|OXM_OF_VLAN_VID|OXM_OF_TCP_FLAGS|OXM_OF_VLAN_VID_W|NXM_NX_TCP_FLAGS|NXM_OF_TCP_DST_W|OXM_OF_TCP_DST_W|ONFOXM_ET_TCP_FLAGS|NXM_NX_ND_TARGET|OXM_OF_ETH_DST_W|NXM_OF_ETH_SRC_W|NXM_OF_ARP_SPA_W|NXM_OF_ARP_TPA_W|NXM_OF_IN_PORT|NXM_OF_ETH_SRC|OXM_OF_ARP_TPA_W|_FLABEL_W|OXM_OF_ARP_SPA_W|_SRC_W|_DST_W)\([^)]*\)
+
+# ignore long runs of a single character:
+\b([A-Za-z])\g{-1}{3,}\b
+
+# Compiler flags
+[\[\t "'`=]-[DW]
+[\[\t "'`=]-l(?!isten)
+
+# <word>v#
+[Vv]\d+(?:\b|(?=[a-zA-Z_]))

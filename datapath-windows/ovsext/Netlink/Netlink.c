@@ -781,7 +781,7 @@ NlAttrMinLen(NL_ATTR_TYPE type)
     case NL_A_NESTED: return 0;
     case N_NL_ATTR_TYPES:
     default:
-    OVS_LOG_WARN("Unsupprted attribute type: %d", type);
+    OVS_LOG_WARN("Unsupported attribute type: %d", type);
     ASSERT(0);
     }
 
@@ -809,7 +809,7 @@ NlAttrMaxLen(NL_ATTR_TYPE type)
     case NL_A_NESTED: return SIZE_MAX;
     case N_NL_ATTR_TYPES:
     default:
-    OVS_LOG_WARN("Unsupprted attribute type: %d", type);
+    OVS_LOG_WARN("Unsupported attribute type: %d", type);
     ASSERT(0);
     }
 

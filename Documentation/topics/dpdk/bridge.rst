@@ -391,7 +391,7 @@ the following test-case in tests/system-dpdk.at ::
     OVS-DPDK - MFEX Autovalidator
 
 The unit test uses mulitple traffic type to test the correctness of the
-implementaions.
+implementations.
 
 The MFEX commands can also be tested for negative and positive cases to
 verify that the MFEX set command does not allow for incorrect parameters.

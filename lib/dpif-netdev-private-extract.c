@@ -364,7 +364,7 @@ dpif_miniflow_extract_autovalidator(struct dp_packet_batch *packets,
      * simplifies unit-tests as changing --enable-mfex-default-autovalidator
      * would pass/fail. By always returning zero, autovalidator is a little
      * slower, but we gain consistency in testing. The auto-validator is only
-     * meant to test different implementaions against a batch of packets
+     * meant to test different implementations against a batch of packets
      * without incrementing hit counters.
      */
     return 0;

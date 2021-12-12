@@ -1297,7 +1297,7 @@
 
       <column name="datapath_version">
           Reports the datapath version.  This column is maintained for
-          backwards compatibility.  The preferred locatation is the
+          backwards compatibility.  The preferred location is the
           <ref column="datapath_id" table="Datapath"/> column of the
           <ref table="Datapath"/> table.  The full documentation for this
           column is there.

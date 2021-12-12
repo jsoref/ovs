@@ -359,7 +359,7 @@ IPv6PseudoChecksum(UINT32 *src,
  *
  *  Input Pramater:
  *     oldSum: old checksum value in checksum field
- *     prev:   previous value of relevant 32 bit feld in network
+ *     prev:   previous value of relevant 32 bit field in network
  *             byte order.
  *     new:    new value of the relevant 32 bit field in network
  *             byte order.
@@ -394,7 +394,7 @@ ChecksumUpdate32(UINT16 oldSum,
  *
  *  Input Pramater:
  *     oldSum: old checksum value in checksum field
- *     prev:   previous value of relevant 32 bit feld in network
+ *     prev:   previous value of relevant 32 bit field in network
  *             byte order.
  *     new:    new value of the relevant 32 bit field in network
  *             byte order.

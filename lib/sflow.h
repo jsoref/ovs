@@ -123,7 +123,7 @@ typedef struct _SFLSampled_ipv6 {
 /* Extended switch data */
 
 typedef struct _SFLExtended_switch {
-    u_int32_t src_vlan;       /* The 802.1Q VLAN id of incomming frame */
+    u_int32_t src_vlan;       /* The 802.1Q VLAN id of incoming frame */
     u_int32_t src_priority;   /* The 802.1p priority */
     u_int32_t dst_vlan;       /* The 802.1Q VLAN id of outgoing frame */
     u_int32_t dst_priority;   /* The 802.1p priority */

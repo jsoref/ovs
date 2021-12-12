@@ -9261,7 +9261,7 @@ OVS_VSWITCHD_START([add-br br1 -- set bridge br1 datapath-type=dummy -- \
                     set Interface p1 bfd:enable=true bfd:min_tx=500 bfd:min_rx=500])
 
 ovs-appctl time/stop
-# advance the clock to stablize everything.
+# advance the clock to stabilize everything.
 ovs-appctl time/warp 5000 100
 # cfm/show should show 'recv' fault.
 AT_CHECK([ovs-appctl cfm/show | sed -n '/^.*fault:.*/p'], [0], [dnl
@@ -9284,7 +9284,7 @@ AT_CHECK([ovs-appctl bond/show | sed -n '/^.*may_enable:.*/p'], [0], [dnl
 
 # now disable the bfd on p1.
 AT_CHECK([ovs-vsctl set Interface p1 bfd:enable=false])
-# advance the clock to stablize everything.
+# advance the clock to stabilize everything.
 ovs-appctl time/warp 5000 100
 # cfm/show should show 'recv' fault.
 AT_CHECK([ovs-appctl cfm/show | sed -n '/^.*fault:.*/p'], [0], [dnl
@@ -9304,7 +9304,7 @@ AT_CHECK([ovs-appctl bond/show br0bond | sed -n '/^.*may_enable:.*/p'], [0], [dn
 # now enable the bfd on p1 and disable bfd on p0.
 AT_CHECK([ovs-vsctl set Interface p1 bfd:enable=true])
 AT_CHECK([ovs-vsctl set Interface p0 bfd:enable=false])
-# advance the clock to stablize everything.
+# advance the clock to stabilize everything.
 ovs-appctl time/warp 5000 100
 # cfm/show should show 'recv' fault.
 AT_CHECK([ovs-appctl cfm/show | sed -n '/^.*fault:.*/p'], [0], [dnl

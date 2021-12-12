@@ -28,7 +28,7 @@
  * The procedure is to classify the packet based on the traffic type
  * using predifined bit-masks and arrage the packet header data using shuffle
  * instructions to a pre-defined place as required by the miniflow.
- * This elimates the if-else ladder to identify the packet data and add data
+ * This eliminates the if-else ladder to identify the packet data and add data
  * as per protocol which is present.
  */
 

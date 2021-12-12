@@ -3878,7 +3878,7 @@ ovs-vsctl add-port br0 p0 -- set Interface p0 type=patch options:peer=p1 \
 
         <column name="bfd" key="cpath_down" type='{"type": "boolean"}'>
           Set to true to notify the remote endpoint that traffic should not be
-          forwarded to this system for some reason other than a connectivty
+          forwarded to this system for some reason other than a connectivity
           failure on the interface being monitored.  The typical underlying
           reason is ``concatenated path down,'' that is, that connectivity
           beyond the local system is down.  Defaults to false.

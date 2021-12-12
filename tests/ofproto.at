@@ -2127,7 +2127,7 @@ ovs-appctl -t ovs-ofctl ofctl/set-output-file monitor.log
 AT_CAPTURE_FILE([monitor.log])
 
 # This bundle adds a flow using that group and then a packet-out that
-# needs them both.  Finally the bundle adds another flow that referes
+# needs them both.  Finally the bundle adds another flow that refers
 # to a non-existing group, causing the bundle to fail, and the
 # packet-in should not get executed.
 AT_DATA([bundle.txt], [dnl
@@ -2168,7 +2168,7 @@ ovs-appctl -t ovs-ofctl ofctl/set-output-file monitor.log
 AT_CAPTURE_FILE([monitor.log])
 
 # This bundle adds a flow using that group and then a packet-out that
-# needs them both.  Finally the bundle adds another flow that referes
+# needs them both.  Finally the bundle adds another flow that refers
 # to a non-existing group, causing the bundle to fail, and the
 # packet-in should not get executed.
 AT_DATA([bundle.txt], [dnl

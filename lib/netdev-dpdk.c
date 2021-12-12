@@ -1258,7 +1258,7 @@ common_construct(struct netdev *netdev, dpdk_port_t port_no,
     /* Initialize the flow control to NULL */
     memset(&dev->fc_conf, 0, sizeof dev->fc_conf);
 
-    /* Initilize the hardware offload flags to 0 */
+    /* Initialize the hardware offload flags to 0 */
     dev->hw_ol_features = 0;
 
     dev->flags = NETDEV_UP | NETDEV_PROMISC;

@@ -1143,8 +1143,8 @@ OvsCreateQueueNlPacket(PVOID userData,
 
     /*
      * Make space for the payload to be copied and set the attribute
-     * XXX Uninit set initilizes the buffer with xero, we don't actually need
-     * that the payload to be initailized
+     * XXX Uninit set initializes the buffer with xero, we don't actually need
+     * that the payload to be initialized
      */
     dst = (UINT8 *)NlMsgPutTailUnspecUninit(&nlBuf, OVS_PACKET_ATTR_PACKET,
                                             (UINT16)(dataLen + extraLen));

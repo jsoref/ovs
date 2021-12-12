@@ -750,7 +750,7 @@ NlAttrIsValid(const PNL_ATTR nla, UINT32 maxlen)
 
 /*
  * ---------------------------------------------------------------------------
- * Returns alligned length of the attribute.
+ * Returns aligned length of the attribute.
  * ---------------------------------------------------------------------------
  */
 UINT32

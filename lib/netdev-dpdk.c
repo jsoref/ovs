@@ -648,7 +648,7 @@ dpdk_calculate_mbufs(struct netdev_dpdk *dev, int mtu, bool per_port_mp)
          * It's impossible to determine what the exact memory requirements are
          * when the number of ports and rxqs that utilize a particular mempool
          * can change dynamically at runtime. For now, use this rough
-         * heurisitic.
+         * heuristic.
          */
         if (mtu >= RTE_ETHER_MTU) {
             n_mbufs = MAX_NB_MBUF;

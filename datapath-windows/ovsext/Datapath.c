@@ -518,7 +518,7 @@ OvsCreateDeviceObject(NDIS_HANDLE ovsExtDriverHandle)
     if (status == NDIS_STATUS_SUCCESS) {
         OvsRegisterSystemProvider((PVOID)gOvsDeviceObject);
     } else {
-        OVS_LOG_ERROR("Failed to regiser pseudo device, error: 0x%08x",
+        OVS_LOG_ERROR("Failed to register pseudo device, error: 0x%08x",
                       status);
     }
 

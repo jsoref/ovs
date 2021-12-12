@@ -1467,7 +1467,7 @@ check_max_dp_hash_alg(struct dpif_backer *backer)
     ofpbuf_use_stack(&key, &keybuf, sizeof keybuf);
     odp_flow_key_from_flow(&odp_parms, &key);
 
-    /* All datapaths support algortithm 0 (OVS_HASH_ALG_L4). */
+    /* All datapaths support algorithm 0 (OVS_HASH_ALG_L4). */
     for (int alg = 1; alg < __OVS_HASH_MAX; alg++) {
         struct ofpbuf actions;
         bool ok;

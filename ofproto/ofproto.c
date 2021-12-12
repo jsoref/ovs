@@ -2970,7 +2970,7 @@ ofproto_rule_try_ref(struct rule *rule)
  *
  * Use of RCU allows short term use (between RCU quiescent periods) without
  * keeping a reference.  A reference must be taken if the rule needs to
- * stay around accross the RCU quiescent periods. */
+ * stay around across the RCU quiescent periods. */
 void
 ofproto_rule_unref(struct rule *rule)
 {

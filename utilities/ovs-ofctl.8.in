@@ -1090,7 +1090,7 @@ In those rare cases Open vSwitch 2.10 and later fall back to the \fBhash\fR
 method with the default set of hash fields.
 .RS
 .IP \fBdp_hash\fR
-Use a datapath computed hash value.  The hash algorithm varies accross
+Use a datapath computed hash value.  The hash algorithm varies across
 different datapath implementations.  \fBdp_hash\fR uses the upper 32
 bits of the \fBselection_method_param\fR as the datapath hash
 algorithm selector.  The supported values are \fB0\fR (corresponding to

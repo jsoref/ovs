@@ -72,7 +72,7 @@ AT_CHECK([ovsdb-server --remote=punix:socket db --run="sh txnfile"], [0], [stdou
 AT_CHECK([grep 'syntax error: db: parse error.* in header line "xxx"' stderr],
   [0], [ignore])
 cat stdout >> output
-dnl Run a final transaction to verify that both transactions succeeeded.
+dnl Run a final transaction to verify that both transactions succeeded.
 dnl The crap that we added should have been truncated by the previous run,
 dnl so ovsdb-server shouldn't log a warning this time.
 AT_DATA([txnfile], [[ovsdb-client transact unix:socket \
@@ -120,7 +120,7 @@ AT_CHECK([ovsdb-server --remote=punix:socket db --run="sh txnfile"], [0], [stdou
 AT_CHECK([grep 'syntax "{"invalid":{}}": unknown table: No table named invalid.' stderr],
   [0], [ignore])
 cat stdout >> output
-dnl Run a final transaction to verify that both transactions succeeeded.
+dnl Run a final transaction to verify that both transactions succeeded.
 dnl The crap that we added should have been truncated by the previous run,
 dnl so ovsdb-server shouldn't log a warning this time.
 AT_DATA([txnfile], [[ovsdb-client transact unix:socket \

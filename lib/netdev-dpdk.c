@@ -3438,7 +3438,7 @@ netdev_dpdk_get_ifindex(const struct netdev *netdev)
 
     ovs_mutex_lock(&dev->mutex);
     /* Calculate hash from the netdev name. Ensure that ifindex is a 24-bit
-     * postive integer to meet RFC 2863 recommendations.
+     * positive integer to meet RFC 2863 recommendations.
      */
     int ifindex = hash_string(netdev->name, 0) % 0xfffffe + 1;
     ovs_mutex_unlock(&dev->mutex);

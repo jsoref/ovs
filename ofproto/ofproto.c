@@ -1502,7 +1502,7 @@ ofproto_get_n_tables(const struct ofproto *ofproto)
 
 /* Returns the number of Controller visible OpenFlow tables
  * in 'ofproto'. This number will exclude Hidden tables.
- * This funtion's return value should be less or equal to that of
+ * This function's return value should be less or equal to that of
  * ofproto_get_n_tables() . */
 uint8_t
 ofproto_get_n_visible_tables(const struct ofproto *ofproto)

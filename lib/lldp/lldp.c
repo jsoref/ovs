@@ -664,7 +664,7 @@ lldp_decode(struct lldpd *cfg OVS_UNUSED, char *frame, int s,
 
                 default:
                     hardware->h_rx_unrecognized_cnt++;
-                    VLOG_INFO("Unrecogised tlv subtype received");
+                    VLOG_INFO("Unrecognised tlv subtype received");
                     break;
                 }
             } else if (memcmp(dcbx, orgid, sizeof orgid) == 0) {

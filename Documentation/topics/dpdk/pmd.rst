@@ -61,8 +61,8 @@ To clear previous stats::
 
     $ ovs-appctl dpif-netdev/pmd-stats-clear
 
-Port/Rx Queue Assigment to PMD Threads
---------------------------------------
+Port/Rx Queue Assignment to PMD Threads
+---------------------------------------
 
 .. todo::
 

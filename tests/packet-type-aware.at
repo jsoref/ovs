@@ -512,7 +512,7 @@ OVS_VSWITCHD_STOP(["/The Open vSwitch kernel module is probably not loaded/d"])
 AT_CLEANUP
 
 
-AT_SETUP([ptap - check decap() prerequisits])
+AT_SETUP([ptap - check decap() prerequisites])
 OVS_VSWITCHD_START
 
 # Decap IP header, then set IP destination address. This should fail.

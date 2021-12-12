@@ -1001,7 +1001,7 @@ done:
     OvsReleaseSwitchContext(gOvsSwitchContext);
 
 exit:
-    /* Should not complete a pending IRP unless proceesing is completed. */
+    /* Should not complete a pending IRP unless processing is completed. */
     if (status == STATUS_PENDING) {
         return status;
     }

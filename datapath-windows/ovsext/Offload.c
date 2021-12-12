@@ -123,7 +123,7 @@ CalculateOnesComplement(UINT8 *start,
  *   This assume the checksum field is initailized properly.
  *
  * Input Parameter:
- *    ptr:  point to the data to be checksumed
+ *    ptr:  point to the data to be checksummed
  *    totalLength: total length of the data
  *    initial: inital value to remit the checksum. Please note this
  *             value should be network byte order value.
@@ -423,7 +423,7 @@ ChecksumUpdate16(UINT16 oldSum,
  * nb           : NB which contains the packet bytes.
  * csumDataLen  : Length of bytes to be checksummed.
  * offset       : offset to the first bytes of the data stream to be
- *                checksumed.
+ *                checksummed.
  *
  * Result:
  *  return 0, if there is a failure.

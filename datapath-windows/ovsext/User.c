@@ -1267,7 +1267,7 @@ OvsPendPacketCmdHandler(POVS_USER_PARAMS_CONTEXT usrParamsCtx,
 
     /*
      * XXX access to packet queue must be through acquiring a lock as user mode
-     * could unsubscribe and the instnace will be freed.
+     * could unsubscribe and the instance will be freed.
      */
     return OvsWaitDpIoctl(usrParamsCtx->irp, instance->fileObject);
 }

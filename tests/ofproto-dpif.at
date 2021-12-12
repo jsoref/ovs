@@ -11309,7 +11309,7 @@ AT_CHECK([ovs-vsctl set Interface p1 mtu_request=1600])
 
 # Check that the new MTU is applied
 AT_CHECK([ovs-vsctl wait-until Interface p1 mtu=1600])
-# The internal port 'br0' should have the same MTU value as p1, becase it's
+# The internal port 'br0' should have the same MTU value as p1, because it's
 # the new bridge minimum.
 AT_CHECK([ovs-vsctl wait-until Interface br0 mtu=1600])
 

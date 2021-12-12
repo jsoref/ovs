@@ -32,7 +32,7 @@
  * a. It DOES NOT support automatic buffer reallocation.
  *    i. A netlink input/output message is a static buffer.
  * b. The unused space is at the tail.
- * c. There is no notion of headdroom.
+ * c. There is no notion of headroom.
  * ==========================================================================
  */
 #include <ndis.h>

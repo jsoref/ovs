@@ -380,7 +380,7 @@ class Idl(object):
             elif (msg.type == ovs.jsonrpc.Message.T_REPLY
                   and self._db_change_aware_request_id is not None
                   and self._db_change_aware_request_id == msg.id):
-                # Reply to us notifying the server of our change awarness.
+                # Reply to us notifying the server of our change awareness.
                 self._db_change_aware_request_id = None
             elif (msg.type == ovs.jsonrpc.Message.T_REPLY
                   and self._lock_request_id is not None

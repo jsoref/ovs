@@ -1126,7 +1126,7 @@ class IPsecMonitor(object):
     def show(self, unix_conn, policies, securities):
         """This function prints all tunnel state in 'unix_conn'.
         It uses 'policies' and securities' received from Linux Kernel
-        to show if tunnels were actually configured by the IKE deamon."""
+        to show if tunnels were actually configured by the IKE daemon."""
         if not self.tunnels:
             unix_conn.reply("No tunnels configured with IPsec")
             return

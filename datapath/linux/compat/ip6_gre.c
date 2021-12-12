@@ -2715,7 +2715,7 @@ int rpl_ip6gre_init(void)
 	return err;
 
 ip6_gre_loaded:
-	/* Since IPv6 GRE only allows single receiver to be registerd,
+	/* Since IPv6 GRE only allows single receiver to be registered,
 	 * we skip here so only transmit works, see:
 	 *
 	 * commit f9242b6b28d61295f2bf7e8adfb1060b382e5381

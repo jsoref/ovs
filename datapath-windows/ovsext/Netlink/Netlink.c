@@ -568,7 +568,7 @@ NlMsgStartNested(PNL_BUFFER buf, UINT16 type)
     nlaData = NlMsgPutTailUnspecUninit(buf, type, 0);
 
     if (!nlaData) {
-        /* Value zero must be reated as error by the caller.
+        /* Value zero must be treated as error by the caller.
          * This is because an attribute can never be added
          * at offset zero, it will always come after NL_MSG_HDR,
          * GENL_HDR and OVS_HEADER. */

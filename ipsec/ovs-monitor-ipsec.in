@@ -249,7 +249,7 @@ conn prevent_unencrypted_vxlan
         It returns dictionary where <key> is interface name (as in OVSDB)
         and <value> is another dictionary.  This another dictionary
         uses strongSwan connection name as <key> and more detailed
-        sample line from the parsed outpus as <value>. """
+        sample line from the parsed output as <value>. """
 
         conns = {}
         proc = subprocess.Popen([self.IPSEC, 'status'], stdout=subprocess.PIPE)
@@ -660,7 +660,7 @@ conn prevent_unencrypted_vxlan
         It returns dictionary where <key> is interface name (as in OVSDB)
         and <value> is another dictionary.  This another dictionary
         uses LibreSwan connection name as <key> and more detailed
-        sample line from the parsed outpus as <value>. """
+        sample line from the parsed output as <value>. """
 
         conns = {}
         proc = subprocess.Popen([self.IPSEC, 'status', '--ctlsocket',

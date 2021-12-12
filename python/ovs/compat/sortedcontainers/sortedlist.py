@@ -863,8 +863,8 @@ class SortedList(MutableSequence):
                     stop_pos, stop_idx = self._pos(stop)
 
                 prefix = _lists[start_pos][start_idx:]
-                midle = _lists[(start_pos + 1):stop_pos]
-                result = reduce(iadd, midle, prefix)
+                middle = _lists[(start_pos + 1):stop_pos]
+                result = reduce(iadd, middle, prefix)
                 result += _lists[stop_pos][:stop_idx]
 
                 return result

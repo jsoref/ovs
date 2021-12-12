@@ -116,7 +116,7 @@ def output(attrs):
                                   3)
             if attrs['IP_FRAGMENT'] != 'no':
                 frag_map = {'first': 0x2000,   # more frags, ofs 0
-                            'midle': 0x2111,  # more frags, ofs 0x888
+                            'middle': 0x2111,  # more frags, ofs 0x888
                             'last': 0x0222}    # last frag, ofs 0x1110
                 ip = (ip[:6]
                       + struct.pack('>H', frag_map[attrs['IP_FRAGMENT']])
@@ -230,7 +230,7 @@ for dl_header in ('802.2+SNAP', 'Ethernet'):
             c = b.copy()
             c['DL_TYPE'] = 'ip'
             c['IP_OPTIONS'] = ip_options
-            for ip_fragment in ('no', 'first', 'midle', 'last'):
+            for ip_fragment in ('no', 'first', 'middle', 'last'):
                 d = c.copy()
                 d['IP_FRAGMENT'] = ip_fragment
                 for tp_proto in ('TCP', 'TCP+options', 'UDP', 'ICMP', 'other'):

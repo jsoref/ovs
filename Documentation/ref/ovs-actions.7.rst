@@ -1798,7 +1798,7 @@ example:
   - Resubmit to a table selected based on learned information, e.g. see
     https://mail.openvswitch.org/pipermail/ovs-discuss/2016-June/021694.html .
 
-  - MAC learning in the midle of a pipeline, as described in the
+  - MAC learning in the middle of a pipeline, as described in the
     ``Open vSwitch Advanced Features Tutorial`` in the OVS documentation.
 
   - TCP state based firewalling, by learning outgoing connections based on SYN

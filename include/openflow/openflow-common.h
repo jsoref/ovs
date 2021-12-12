@@ -134,7 +134,7 @@ enum ofp_version {
  * is permanent. */
 #define OFP_FLOW_PERMANENT 0
 
-/* By default, choose a priority in the midle. */
+/* By default, choose a priority in the middle. */
 #define OFP_DEFAULT_PRIORITY 0x8000
 
 

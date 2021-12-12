@@ -418,7 +418,7 @@ Start VM using vhost-user mode::
    -object memory-backend-file,id=mem,size=4096M,mem-path=/dev/hugepages,share=on \
    -numa node,memdev=mem -mem-prealloc -smp 2
 
-Setup the OpenFlow ruls::
+Setup the OpenFlow rules::
 
   ovs-ofctl del-flows br0
   ovs-ofctl add-flow br0 "in_port=enp2s0, actions=output:vhost-user-1"

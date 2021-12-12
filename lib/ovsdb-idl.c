@@ -531,7 +531,7 @@ ovsdb_idl_get_seqno(const struct ovsdb_idl *idl)
  * connection.
  *
  * ovsdb_idl_set_condition() sets a new condition that is different from
- * the current condtion, the next expected "sequence number" is returned.
+ * the current condition, the next expected "sequence number" is returned.
  *
  * Whenever ovsdb_idl_get_cond_seqno() returns a value that matches
  * the return value of ovsdb_idl_set_condition(),  The client is

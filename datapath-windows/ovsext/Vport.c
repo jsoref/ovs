@@ -571,7 +571,7 @@ HvUpdateNic(POVS_SWITCH_CONTEXT switchContext,
 
     /*
      * XXX: Not sure what kind of event to post here. DPIF is not interested in
-     * changes to MAC address. Netdev-windows might be intrested, though.
+     * changes to MAC address. Netdev-windows might be interested, though.
      * That said, if the name changes, not clear what kind of event to be
      * posted. We might have to delete the vport, and have userspace recreate
      * it.

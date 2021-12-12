@@ -470,7 +470,7 @@ ovsdb_destroy(struct ovsdb *db)
         /* Destroy txn history. */
         ovsdb_txn_history_destroy(db);
 
-        /* Cancell all the forwarded transactions.  There should not be
+        /* Cancel all the forwarded transactions.  There should not be
          * any as all triggers should be already cancelled. */
         ovsdb_txn_forward_cancel_all(db, false);
         ovs_assert(hmap_is_empty(&db->txn_forward_sent));

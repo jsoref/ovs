@@ -5129,7 +5129,7 @@ dnl Checks the implementation of conntrack original direction tuple matching
 dnl with FTP ALGs in combination with NAT, with flow tables that implement
 dnl the NATing before the first round of recirculation - that is, the first
 dnl flow ct(nat, table=foo) then a subsequent flow will implement the
-dnl commiting of NATed and other connections with ct(nat..),output:foo.
+dnl committing of NATed and other connections with ct(nat..),output:foo.
 dnl
 dnl IP_ADDR must specify the NAT address in standard "10.1.1.x" format,
 dnl and IP_ADDR_AS_HEX must specify the same address as hex, eg 0x0a0101xx.

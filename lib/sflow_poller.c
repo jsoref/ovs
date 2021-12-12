@@ -92,7 +92,7 @@ void sfl_poller_set_sFlowCpInterval(SFLPoller *poller, u_int32_t sFlowCpInterval
     }
     else {
         /* Setting sFlowCpInterval to 0 disables counter polling altogether.  Thanks to
-	   Andy Kitchingman for spotting this ommission. */
+	   Andy Kitchingman for spotting this omission. */
         poller->countersCountdown = 0;
     }
 }

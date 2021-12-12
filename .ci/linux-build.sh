@@ -229,7 +229,7 @@ if [ "$CC" = "clang" ]; then
     CFLAGS_FOR_OVS="${CFLAGS_FOR_OVS} -Wno-error=unused-command-line-argument"
 elif [ "$M32" ]; then
     # Not using sparse for 32bit builds on 64bit machine.
-    # Adding m32 flag directly to CC to avoid any posiible issues with API/ABI
+    # Adding m32 flag directly to CC to avoid any possible issues with API/ABI
     # difference on 'configure' and 'make' stages.
     export CC="$CC -m32"
 elif [ "$TRAVIS_ARCH" != "aarch64" ]; then

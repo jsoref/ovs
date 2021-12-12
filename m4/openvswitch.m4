@@ -397,7 +397,7 @@ dnl Checks for binutils/assembler known issue with AVX512.
 dnl Due to backports, we probe assembling a reproducer instead of checking
 dnl binutils version string. More details, including ASM dumps and debug here:
 dnl   GCC: https://gcc.gnu.org/bugzilla/show_bug.cgi?id=90028
-dnl The checking of binutils funcationality instead of LD version is similar
+dnl The checking of binutils functionality instead of LD version is similar
 dnl to as how DPDK proposes to solve this issue:
 dnl   http://patches.dpdk.org/patch/71723/
 AC_DEFUN([OVS_CHECK_BINUTILS_AVX512],

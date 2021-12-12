@@ -11324,7 +11324,7 @@ AT_CHECK([ovs-vsctl wait-until Interface p2 mtu=1600])
 AT_CHECK([ovs-vsctl wait-until Interface br0 mtu=1600])
 
 # Explicitly set mtu_request on the internal member.  This should prevent
-# the MTU from being overriden.
+# the MTU from being overridden.
 AT_CHECK([ovs-vsctl set int br0 mtu_request=1700])
 AT_CHECK([ovs-vsctl wait-until Interface br0 mtu=1700])
 

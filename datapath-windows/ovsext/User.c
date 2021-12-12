@@ -898,7 +898,7 @@ OvsCompletePacketHeader(UINT8 *packet,
      */
     if (isRecv && csumInfo.Receive.TcpChecksumValueInvalid) {
         /*
-         * Only this case, we need to reclaculate pseudo checksum
+         * Only this case, we need to recalculate pseudo checksum
          * all other cases, it is assumed the pseudo checksum is
          * filled already.
          *

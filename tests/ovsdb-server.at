@@ -1921,7 +1921,7 @@ dnl Flip the role of 'db1' and 'db2'.  'db1' becomes backup, and db2 becomes act
 AT_CHECK([ovs-appctl -t "`pwd`"/unixctl2 ovsdb-server/disconnect-active-ovsdb-server])
 AT_CHECK([ovs-appctl -t "`pwd`"/unixctl ovsdb-server/connect-active-ovsdb-server])
 
-dnl Verify the change happend
+dnl Verify the change happened
 OVS_WAIT_UNTIL([ovs-appctl -t "`pwd`"/unixctl ovsdb-server/sync-status |grep replicating])
 AT_CHECK([ovs-appctl -t "`pwd`"/unixctl2 ovsdb-server/sync-status], [0], [state: active
 ])

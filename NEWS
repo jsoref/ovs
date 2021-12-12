@@ -91,9 +91,9 @@ v2.16.0 - 16 Aug 2021
        until further releases.
      * New debug appctl command 'dpdk/get-malloc-stats'.
      * Add hardware offload support for tunnel pop action (experimental).
-       Available only if DPDK experimantal APIs enabled during the build.
+       Available only if DPDK experimental APIs enabled during the build.
      * Add hardware offload support for VXLAN flows (experimental).
-       Available only if DPDK experimantal APIs enabled during the build.
+       Available only if DPDK experimental APIs enabled during the build.
      * EAL options --socket-mem and --socket-limit to have default values
        removed with 2.17 release. Logging added to alert users.
    - ovsdb-tool:

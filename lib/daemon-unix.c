@@ -977,7 +977,7 @@ daemon_set_new_user(const char *user_spec)
         }
 
         if (e != 0) {
-            VLOG_FATAL("%s: Failed to retrive user %s's uid (%s), aborting.",
+            VLOG_FATAL("%s: Failed to retrieve user %s's uid (%s), aborting.",
                        pidfile, user, ovs_strerror(e));
         }
         if (res == NULL) {
@@ -992,7 +992,7 @@ daemon_set_new_user(const char *user_spec)
         }
 
         if (e != 0) {
-            VLOG_FATAL("%s: Failed to retrive current user's name "
+            VLOG_FATAL("%s: Failed to retrieve current user's name "
                        "(%s), aborting.", pidfile, ovs_strerror(e));
         }
         user = xstrdup(pwd.pw_name);

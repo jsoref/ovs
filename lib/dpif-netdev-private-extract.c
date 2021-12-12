@@ -121,7 +121,7 @@ dpif_miniflow_extract_init(void)
         mfex_impls[i].available = avail;
     }
 
-    /* For the first call, this will be choosen based on the
+    /* For the first call, this will be chosen based on the
      * compile time flag.
      */
     VLOG_INFO("Default MFEX Extract implementation is %s.\n",

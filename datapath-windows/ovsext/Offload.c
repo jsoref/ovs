@@ -57,7 +57,7 @@
  *     ------------------------------------------------
  *
  * Result:
- *    As name indicate, the final data is not 1's complemnent
+ *    As name indicate, the final data is not 1's complement
  *----------------------------------------------------------------------------
  */
 UINT64
@@ -118,7 +118,7 @@ CalculateOnesComplement(UINT8 *start,
  * CalculateChecksum --
  *
  *   Given the start point, and length, calculate the checksum
- *   as 1's complement of 1's comlement.
+ *   as 1's complement of 1's complement.
  *
  *   This assume the checksum field is initailized properly.
  *
@@ -160,7 +160,7 @@ CalculateChecksum(UINT8 *ptr,
  *     ------------------------------------------------
  *
  * Result:
- *    As name indicate, the final data is not 1's complemnent
+ *    As name indicate, the final data is not 1's complement
  *----------------------------------------------------------------------------
  */
 UINT64

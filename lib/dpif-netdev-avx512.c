@@ -179,7 +179,7 @@ dp_netdev_input_outer_avx512(struct dp_netdev_pmd_thread *pmd,
         struct netdev_flow_key *key = &keys[i];
 
         /* Check the minfiflow mask to see if the packet was correctly
-         * classifed by vector mfex else do a scalar miniflow extract
+         * classified by vector mfex else do a scalar miniflow extract
          * for that packet.
          */
         bool mfex_hit = !!(mf_mask & (1 << i));

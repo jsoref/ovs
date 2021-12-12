@@ -116,7 +116,7 @@ struct ipf_list {
     struct ovs_list list_node;     /* In struct ipf's 'frag_exp_list' or
                                     * 'frag_complete_list'. */
     struct ipf_frag *frag_list;    /* List of fragments for this list. */
-    struct ipf_list_key key;       /* The key for the fragemnt list. */
+    struct ipf_list_key key;       /* The key for the fragment list. */
     struct dp_packet *reass_execute_ctx; /* Reassembled packet. */
     long long expiration;          /* In milliseconds. */
     int last_sent_idx;             /* Last sent fragment idx. */
@@ -846,9 +846,9 @@ ipf_list_init(struct ipf_list *ipf_list, struct ipf_list_key *key,
 
 /* Generates a fragment list key from a well formed fragment and either starts
  * a new fragment list or increases the size of the existing fragment list,
- * while checking if the maximum supported fragements are supported or the
+ * while checking if the maximum supported fragments are supported or the
  * list size is impossibly big. Calls 'ipf_process_frag()' to add a fragment
- * to a list of fragemnts. */
+ * to a list of fragments. */
 static bool
 ipf_handle_frag(struct ipf *ipf, struct dp_packet *pkt, ovs_be16 dl_type,
                 uint16_t zone, long long now, uint32_t hash_basis)

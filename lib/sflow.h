@@ -211,7 +211,7 @@ typedef struct _SFLExtended_mpls {
 /* Extended NAT data
    Packet header records report addresses as seen at the sFlowDataSource.
    The extended_nat structure reports on translated source and/or destination
-   addesses for this packet. If an address was not translated it should
+   addresses for this packet. If an address was not translated it should
    be equal to that reported for the header. */
 
 typedef struct _SFLExtended_nat {

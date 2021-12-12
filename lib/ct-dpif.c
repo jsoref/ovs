@@ -57,7 +57,7 @@ static const struct flags ct_dpif_status_flags[] = {
  * 'dump' must be the address of a pointer to a struct ct_dpif_dump_state,
  * which should be passed (unaltered) to ct_dpif_dump_{next,done}().
  *
- * If 'zone' is not NULL, it should point to an integer identifing a
+ * If 'zone' is not NULL, it should point to an integer identifying a
  * conntrack zone to which the dump will be limited.  If it is NULL,
  * conntrack entries from all zones will be dumped.
  *

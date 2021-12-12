@@ -141,7 +141,7 @@ struct bond {
                                  * it is stored into OVSDB */
 
     /* Interface name may not be persistent across an OS reboot, use
-     * MAC address for identifing the active member. */
+     * MAC address for identifying the active member. */
     struct eth_addr active_member_mac; /* MAC address of the active member. */
     /* Legacy compatibility. */
     bool lacp_fallback_ab; /* Fallback to active-backup on LACP failure. */

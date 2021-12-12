@@ -1041,7 +1041,7 @@ OFP_ASSERT(sizeof(struct nx_tlv_table_mod) == 8);
 
 /* NXT_TLV_TABLE_REPLY.
  *
- * Issued in reponse to an NXT_TLV_TABLE_REQUEST to give information
+ * Issued in response to an NXT_TLV_TABLE_REQUEST to give information
  * about the current status of the TLV table in the switch. Provides
  * both static information about the switch's capabilities as well as
  * the configured TLV table. */

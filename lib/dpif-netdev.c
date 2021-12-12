@@ -5926,7 +5926,7 @@ ports_require_restart(const struct dp_netdev *dp)
 }
 
 /* Calculates variance in the values stored in array 'a'. 'n' is the number
- * of elements in array to be considered for calculating vairance.
+ * of elements in array to be considered for calculating variance.
  * Usage example: data array 'a' contains the processing load of each pmd and
  * 'n' is the number of PMDs. It returns the variance in processing load of
  * PMDs*/

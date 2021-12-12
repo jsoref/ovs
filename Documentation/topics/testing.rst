@@ -469,7 +469,7 @@ Proof of Concepts
 ~~~~~~~~~~~~~~~~~
 
 Proof of Concepts are documentation materialized into Ansible recipes
-executed in VirtualBox or Libvirt environments orchastrated by Vagrant.
+executed in VirtualBox or Libvirt environments orchestrated by Vagrant.
 Proof of Concepts allow developers to create small virtualized setups that
 demonstrate how certain Open vSwitch features are intended to work avoiding
 user introduced errors by overlooking instructions.  Proof of Concepts

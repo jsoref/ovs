@@ -3419,7 +3419,7 @@ dp_netdev_flow_to_dpif_flow(const struct dp_netdev *dp,
 
         miniflow_expand(&netdev_flow->cr.mask->mf, &wc.masks);
         /* in_port is exact matched, but we have left it out from the mask for
-         * optimnization reasons. Add in_port back to the mask. */
+         * optimization reasons. Add in_port back to the mask. */
         wc.masks.in_port.odp_port = ODPP_NONE;
 
         /* Key */

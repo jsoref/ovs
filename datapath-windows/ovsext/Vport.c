@@ -208,7 +208,7 @@ HvUpdatePort(POVS_SWITCH_CONTEXT switchContext,
     vport = OvsFindVportByPortIdAndNicIndex(switchContext,
                                             portParam->PortId, 0);
     /*
-     * Update properties only for NETDEV ports for supprting PS script
+     * Update properties only for NETDEV ports for supporting PS script
      */
     if (vport == NULL) {
         goto update_port_done;

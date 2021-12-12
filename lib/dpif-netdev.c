@@ -282,7 +282,7 @@ struct dp_netdev {
     void *upcall_aux;
 
     /* Callback function for notifying the purging of dp flows (during
-     * reseting pmd deletion). */
+     * resetting pmd deletion). */
     dp_purge_callback *dp_purge_cb;
     void *dp_purge_aux;
 

@@ -683,7 +683,7 @@ struct sw_flow *ovs_flow_tbl_lookup_stats(struct flow_table *tbl,
 		return flow_lookup(tbl, ti, ma, key, n_mask_hit, &mask_index);
 	}
 
-	/* Pre and post recirulation flows usually have the same skb_hash
+	/* Pre and post recirculation flows usually have the same skb_hash
 	 * value. To avoid hash collisions, rehash the 'skb_hash' with
 	 * 'recirc_id'.  */
 	if (key->recirc_id)

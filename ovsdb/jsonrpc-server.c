@@ -1457,7 +1457,7 @@ ovsdb_jsonrpc_monitor_create(struct ovsdb_jsonrpc_session *s, struct ovsdb *db,
 
     dbmon = ovsdb_monitor_add(m->dbmon);
     if (dbmon != m->dbmon) {
-        /* Found an exisiting dbmon, reuse the current one. */
+        /* Found an existing dbmon, reuse the current one. */
         ovsdb_monitor_remove_jsonrpc_monitor(m->dbmon, m, NULL);
         ovsdb_monitor_add_jsonrpc_monitor(dbmon, m);
         m->dbmon = dbmon;

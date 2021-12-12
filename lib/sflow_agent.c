@@ -411,7 +411,7 @@ SFLReceiver *sfl_agent_getReceiver(SFLAgent *agent, u_int32_t receiverIndex)
 SFLSampler *sfl_agent_getNextSampler(SFLAgent *agent, SFLDataSource_instance *pdsi)
 {
     /* return the one lexograpically just after it - assume they are sorted
-       correctly according to the lexographical ordering of the object ids */
+       correctly according to the lexicographical ordering of the object ids */
     SFLSampler *sm = sfl_agent_getSampler(agent, pdsi);
     return sm ? sm->nxt : NULL;
 }
@@ -424,7 +424,7 @@ SFLSampler *sfl_agent_getNextSampler(SFLAgent *agent, SFLDataSource_instance *pd
 SFLPoller *sfl_agent_getNextPoller(SFLAgent *agent, SFLDataSource_instance *pdsi)
 {
     /* return the one lexograpically just after it - assume they are sorted
-       correctly according to the lexographical ordering of the object ids */
+       correctly according to the lexicographical ordering of the object ids */
     SFLPoller *pl = sfl_agent_getPoller(agent, pdsi);
     return pl ? pl->nxt : NULL;
 }

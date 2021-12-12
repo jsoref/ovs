@@ -91,7 +91,7 @@ static bool retry;
 static int leader_only = true;
 
 /* --shuffle-remotes, --no-shuffle-remotes: Shuffle the order of remotes that
- * are specified in the connetion method string.
+ * are specified in the connection method string.
  *
  * In a real Open vSwitch environment, it doesn't make much sense to cluster
  * the Open vSwitch database.  This option exists to enable using ovs-vsctl to

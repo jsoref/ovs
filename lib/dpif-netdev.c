@@ -4101,7 +4101,7 @@ dpif_netdev_execute(struct dpif *dpif, struct dpif_execute *execute)
     if (dp_packet_batch_size(&pp) == 1) {
         /* Packet wasn't dropped during the execution.  Swapping content with
          * the original packet, because the caller might expect actions to
-         * modify it.  Uisng the packet from a batch instead of 'packet_clone'
+         * modify it.  Using the packet from a batch instead of 'packet_clone'
          * because it maybe stolen and replaced by other packet, e.g. by
          * the fragmentation engine. */
         dp_packet_swap(execute->packet, pp.packets[0]);

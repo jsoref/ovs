@@ -194,8 +194,8 @@ struct bfd {
 
     long long int cfg_min_tx;     /* Configured minimum TX rate. */
     long long int cfg_min_rx;     /* Configured required minimum RX rate. */
-    long long int poll_min_tx;    /* Min TX negotating in a poll sequence. */
-    long long int poll_min_rx;    /* Min RX negotating in a poll sequence. */
+    long long int poll_min_tx;    /* Min TX negotiating in a poll sequence. */
+    long long int poll_min_rx;    /* Min RX negotiating in a poll sequence. */
     long long int min_tx;         /* bfd.DesiredMinTxInterval. */
     long long int min_rx;         /* bfd.RequiredMinRxInterval. */
 

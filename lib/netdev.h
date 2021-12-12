@@ -90,7 +90,7 @@ enum netdev_pt_mode {
      *
      * IPv4 and IPv6 packets carried over the netdev are treated as Ethernet:
      * when they are received, they are converted to Ethernet by adding a dummy
-     * header with the proper Ethertype; on tranmission, the Ethernet header is
+     * header with the proper Ethertype; on transmission, the Ethernet header is
      * stripped.  This is a legacy mode for backward compatibility with
      * controllers that are not prepared to handle OpenFlow 1.5+
      * "packet_type". */

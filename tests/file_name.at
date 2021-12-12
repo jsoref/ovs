@@ -76,7 +76,7 @@ ln -s target/ source2
 CHECK_FOLLOW([source], [target])
 CHECK_FOLLOW([source2], [target/])
 
-# follow_symlinks() doesn't expand symlinks in the middle of a name.
+# follow_symlinks() doesn't expand symlinks in the midle of a name.
 : > source/x
 CHECK_FOLLOW([source/x], [source/x])
 AT_CLEANUP

@@ -8,7 +8,7 @@ and reconnect, and from then on all SSL connections must be
 authenticated by a certificate signed by the CA certificate thus
 obtained.
 .IP
-\fBThis option exposes the SSL connection to a man-in-the-middle
+\fBThis option exposes the SSL connection to a man-in-the-midle
 attack obtaining the initial CA certificate\fR, but it may be useful
 for bootstrapping.
 .IP

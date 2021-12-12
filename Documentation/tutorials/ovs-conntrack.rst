@@ -241,7 +241,7 @@ in the "left" and the inverse in the "right" namespaces
 will appear to OVS as hosts in two networks (192.168.0.X and 10.0.0.X)
 communicating with each other.
 This is basically a simulation of two networks / subnets with hosts
-communicating with each other with OVS in middle.
+communicating with each other with OVS in midle.
 
 Tool used to generate TCP segments
 ----------------------------------

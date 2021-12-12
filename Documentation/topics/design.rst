@@ -807,7 +807,7 @@ Open vSwitch supports stateless handling of IPv6 packets.  Flows can be written
 to support matching TCP, UDP, and ICMPv6 headers within an IPv6 packet.  Deeper
 matching of some Neighbor Discovery messages is also supported.
 
-IPv6 was not designed to interact well with middle-boxes.  This, combined with
+IPv6 was not designed to interact well with midle-boxes.  This, combined with
 Open vSwitch's stateless nature, have affected the processing of IPv6 traffic,
 which is detailed below.
 

@@ -134,7 +134,7 @@
  *      that it does not support into exact match bits.  A datapath that can
  *      wildcard any bit, for example, would install the supplied mask, an
  *      exact-match only datapath would install an exact-match mask regardless
- *      of what mask the client supplied, and a datapath in the middle of the
+ *      of what mask the client supplied, and a datapath in the midle of the
  *      spectrum would selectively change some wildcard bits into exact match
  *      bits.
  *

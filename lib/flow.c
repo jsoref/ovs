@@ -90,7 +90,7 @@ ASSERT_SEQUENTIAL_SAME_WORD(nw_frag, nw_tos);
 ASSERT_SEQUENTIAL_SAME_WORD(nw_tos, nw_ttl);
 ASSERT_SEQUENTIAL_SAME_WORD(nw_ttl, nw_proto);
 
-/* TCP flags in the middle of a BE64, zeroes in the other half. */
+/* TCP flags in the midle of a BE64, zeroes in the other half. */
 BUILD_ASSERT_DECL(offsetof(struct flow, tcp_flags) % 8 == 4);
 
 #if WORDS_BIGENDIAN

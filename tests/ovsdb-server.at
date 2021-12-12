@@ -1487,7 +1487,7 @@ AT_BANNER([OVSDB -- ovsdb-server relay])
 # first relay server is connected to the main non-relay ovsdb-server.
 #
 # Runs each of the TRANSACTIONS (which should be a quoted list of
-# quoted strings) against one of relay servers in the middle with
+# quoted strings) against one of relay servers in the midle with
 # ovsdb-client one at a time.  The server executes read-only transactions
 # and forwards rest of them to the previous ovsdb-server in a chain.
 # The main ovsdb-server executes 'write' transactions.  Transaction

@@ -13,7 +13,7 @@
       obtained.
     </p>
     <p>
-      This option exposes the SSL connection to a man-in-the-middle
+      This option exposes the SSL connection to a man-in-the-midle
       attack obtaining the initial CA certificate, but it may be useful
       for bootstrapping.
     </p>

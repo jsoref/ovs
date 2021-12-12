@@ -119,7 +119,7 @@ Q: How many packets does OVS buffer?
     Therefore, in the common case where a packet just passes through the fast
     path, Open vSwitch does not buffer packets itself.  The operating system
     and the network drivers involved in receiving and later in transmitting the
-    packet do often include buffering.  Open vSwitch is only a middleman
+    packet do often include buffering.  Open vSwitch is only a midleman
     between these and does not have direct access or influence over their
     buffers.
 

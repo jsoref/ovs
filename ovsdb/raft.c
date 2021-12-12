@@ -4092,7 +4092,7 @@ raft_handle_install_snapshot_request__(
          * to do. */
         return true;
     } else if (new_log_start < raft->log_end) {
-        /* Case 2: The new snapshot starts in the middle of our log.  We could
+        /* Case 2: The new snapshot starts in the midle of our log.  We could
          * discard the first 'new_log_start - raft->log_start' entries in the
          * log.  But there's not much value in that, since snapshotting is
          * supposed to be a local decision.  Just skip it. */

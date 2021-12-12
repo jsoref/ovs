@@ -18,7 +18,7 @@
  * #define type_min(T) (T)(is_signed_type(T) ? (T)1 << (8*sizeof(T)-1) : 0)
  * #define type_max(T) (T)(is_signed_type(T) ? ((T)1 << (8*sizeof(T)-1)) - 1 : ~(T)0)
  *
- * Unfortunately, the middle expressions, strictly speaking, have
+ * Unfortunately, the midle expressions, strictly speaking, have
  * undefined behaviour, and at least some versions of gcc warn about
  * the type_max expression (but not if -fsanitize=undefined is in
  * effect; in that case, the warning is deferred to runtime...).

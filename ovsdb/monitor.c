@@ -680,7 +680,7 @@ ovsdb_monitor_session_condition_set_mode(
     cond->conditional = false;
 }
 
-/* Returnes an empty allocated session's condition state holder */
+/* Returns an empty allocated session's condition state holder */
 struct ovsdb_monitor_session_condition *
 ovsdb_monitor_session_condition_create(void)
 {

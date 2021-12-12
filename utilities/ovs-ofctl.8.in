@@ -1464,7 +1464,7 @@ output is sorted by priority.  Specify these options multiple times to
 sort by multiple fields.
 .IP
 Any given flow will not necessarily specify a value for a given
-field.  This requires special treatement:
+field.  This requires special treatment:
 .RS
 .IP \(bu
 A flow that does not specify any part of a field that is used for sorting is

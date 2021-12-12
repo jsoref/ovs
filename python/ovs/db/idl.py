@@ -515,7 +515,7 @@ class Idl(object):
 
         :param event:   The event that was triggered
         :type event:    ROW_CREATE, ROW_UPDATE, or ROW_DELETE
-        :param row:     The row as it is after the operation has occured
+        :param row:     The row as it is after the operation has occurred
         :type row:      Row
         :param updates: For updates, row with only old values of the changed
                         columns

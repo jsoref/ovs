@@ -52,7 +52,7 @@ test_log_2_floor(struct ovs_cmdl_context *ctx OVS_UNUSED)
         /* Check maximum x such that f(x) == n. */
         check_log_2_floor((1 << n) | ((1 << n) - 1), n);
 
-        /* Check a random value in the midle. */
+        /* Check a random value in the middle. */
         check_log_2_floor((random_uint32() & ((1 << n) - 1)) | (1 << n), n);
     }
 
@@ -91,7 +91,7 @@ test_ctz(struct ovs_cmdl_context *ctx OVS_UNUSED)
         /* Check maximum x such that f(x) == n. */
         check_ctz32(UINT32_MAX << n, n);
 
-        /* Check a random value in the midle. */
+        /* Check a random value in the middle. */
         check_ctz32((random_uint32() | 1) << n, n);
     }
 
@@ -103,7 +103,7 @@ test_ctz(struct ovs_cmdl_context *ctx OVS_UNUSED)
         /* Check maximum x such that f(x) == n. */
         check_ctz64(UINT64_MAX << n, n);
 
-        /* Check a random value in the midle. */
+        /* Check a random value in the middle. */
         check_ctz64((random_uint64() | UINT64_C(1)) << n, n);
     }
 
@@ -144,7 +144,7 @@ test_clz(struct ovs_cmdl_context *ctx OVS_UNUSED)
         /* Check maximum x such that f(x) == n. */
         check_clz32(UINT32_MAX >> n, n);
 
-        /* Check a random value in the midle. */
+        /* Check a random value in the middle. */
         check_clz32((random_uint32() | 1u << 31) >> n, n);
     }
 
@@ -155,7 +155,7 @@ test_clz(struct ovs_cmdl_context *ctx OVS_UNUSED)
         /* Check maximum x such that f(x) == n. */
         check_clz64(UINT64_MAX >> n, n);
 
-        /* Check a random value in the midle. */
+        /* Check a random value in the middle. */
         check_clz64((random_uint64() | UINT64_C(1) << 63) >> n, n);
     }
 

@@ -134,7 +134,7 @@ Description: Open vSwitch public key infrastructure dependency package
  .
  openvswitch-pki provides PKI (public key infrastructure) support for
  Open vSwitch switches and controllers, reducing the risk of
- man-in-the-midle attacks on the Open vSwitch network infrastructure.
+ man-in-the-middle attacks on the Open vSwitch network infrastructure.
 
 Package: openvswitch-testcontroller
 Architecture: linux-any

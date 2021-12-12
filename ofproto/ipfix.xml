@@ -559,7 +559,7 @@
          The definition of this Information Element is identical
          to the definition of Information Element
          'octetDeltaCount', except that it reports a
-         potentially modified value caused by a midlebox
+         potentially modified value caused by a middlebox
          function after the packet passed the Observation Point.
          </paragraph>
       </description>
@@ -580,7 +580,7 @@
          The definition of this Information Element is identical
          to the definition of Information Element
          'packetDeltaCount', except that it reports a
-         potentially modified value caused by a midlebox
+         potentially modified value caused by a middlebox
          function after the packet passed the Observation Point.
          </paragraph>
       </description>
@@ -1094,7 +1094,7 @@
          The definition of this Information Element is identical
          to the definition of Information Element
          'ipClassOfService', except that it reports a
-         potentially modified value caused by a midlebox
+         potentially modified value caused by a middlebox
          function after the packet passed the Observation Point.
          </paragraph>
       </description>
@@ -1105,7 +1105,7 @@
           See <xref type="rfc" data="rfc2460"/> for the definition of the IPv6
           Traffic Class field.
           See <xref type="rfc" data="rfc3234"/> for the definition of
-          midleboxes.
+          middleboxes.
         </paragraph>
       </references>
       <xref type="rfc" data="rfc5102"/>
@@ -1143,7 +1143,7 @@
          The definition of this Information Element is identical
          to the definition of Information Element
          'destinationMacAddress', except that it reports a
-         potentially modified value caused by a midlebox
+         potentially modified value caused by a middlebox
          function after the packet passed the Observation Point.
          </paragraph>
       </description>
@@ -1670,7 +1670,7 @@
          The definition of this Information Element is identical
          to the definition of Information Element
          'sourceMacAddress', except that it reports a
-         potentially modified value caused by a midlebox
+         potentially modified value caused by a middlebox
          function after the packet passed the Observation Point.
          </paragraph>
       </description>
@@ -1936,7 +1936,7 @@
           The definition of this Information Element is identical to the 
           definition of Information Element 'ipDiffServCodePoint', except 
           that it reports a potentially modified value caused by a 
-          midlebox function after the packet passed the Observation 
+          middlebox function after the packet passed the Observation 
           Point.
         </paragraph>
       </description>
@@ -2902,7 +2902,7 @@
          The definition of this Information Element is identical
          to the definition of Information Element
          'octetTotalCount', except that it reports a
-         potentially modified value caused by a midlebox
+         potentially modified value caused by a middlebox
          function after the packet passed the Observation Point.
          </paragraph>
       </description>
@@ -2923,7 +2923,7 @@
          The definition of this Information Element is identical
          to the definition of Information Element
          'packetTotalCount', except that it reports a
-         potentially modified value caused by a midlebox
+         potentially modified value caused by a middlebox
          function after the packet passed the Observation Point.
          </paragraph>
       </description>
@@ -4418,7 +4418,7 @@
         <paragraph>
           The definition of this Information Element is identical to the 
           definition of Information Element 'sourceIPv4Address', except 
-          that it reports a modified value caused by a NAT midlebox 
+          that it reports a modified value caused by a NAT middlebox 
           function after the packet passed the Observation Point.
         </paragraph>
       </description>
@@ -4426,7 +4426,7 @@
         <paragraph>
           See <xref type="rfc" data="rfc791"/> for the definition of the IPv4 source 
           address field.  See <xref type="rfc" data="rfc3022"/> for the definition of 
-          NAT.  See <xref type="rfc" data="rfc3234"/> for the definition of midleboxes. 
+          NAT.  See <xref type="rfc" data="rfc3234"/> for the definition of middleboxes. 
         </paragraph>
       </references>
      <xref type="person" data="ipfix-iana_at_cisco.com"/>
@@ -4442,7 +4442,7 @@
           The definition of this Information Element is identical to the 
           definition of Information Element 'destinationIPv4Address', 
           except that it reports a modified value caused by a NAT 
-          midlebox function after the packet passed the Observation 
+          middlebox function after the packet passed the Observation 
           Point.
         </paragraph>
       </description>
@@ -4450,7 +4450,7 @@
         <paragraph>
           See <xref type="rfc" data="rfc791"/> for the definition of the IPv4 destination 
           address field.  See <xref type="rfc" data="rfc3022"/> for the definition of 
-          NAT.  See <xref type="rfc" data="rfc3234"/> for the definition of midleboxes. 
+          NAT.  See <xref type="rfc" data="rfc3234"/> for the definition of middleboxes. 
         </paragraph>
       </references>
      <xref type="person" data="ipfix-iana_at_cisco.com"/>
@@ -4467,7 +4467,7 @@
           The definition of this Information Element is identical to the 
           definition of Information Element 'sourceTransportPort', except 
           that it reports a modified value caused by a Network Address 
-          Port Translation (NAPT) midlebox function after the packet 
+          Port Translation (NAPT) middlebox function after the packet 
           passed the Observation Point.
         </paragraph>
       </description>
@@ -4477,7 +4477,7 @@
           field.  See <xref type="rfc" data="rfc793"/> for the definition of the TCP 
           source port field.  See <xref type="rfc" data="rfc4960"/> for the definition of 
           SCTP.     
-          See <xref type="rfc" data="rfc3022"/> for the definition of NAPT.  See <xref type="rfc" data="rfc3234"/> for the definition of midleboxes. 
+          See <xref type="rfc" data="rfc3022"/> for the definition of NAPT.  See <xref type="rfc" data="rfc3234"/> for the definition of middleboxes. 
           Additional information on defined UDP and TCP port numbers can 
           be found at http://www.iana.org/assignments/port-numbers.   
          </paragraph>
@@ -4496,7 +4496,7 @@
           The definition of this Information Element is identical to the 
           definition of Information Element 'destinationTransportPort', 
           except that it reports a modified value caused by a Network 
-          Address Port Translation (NAPT) midlebox function after the 
+          Address Port Translation (NAPT) middlebox function after the 
           packet passed the Observation Point. 
         </paragraph>
       </description>
@@ -4506,7 +4506,7 @@
           field.  See <xref type="rfc" data="rfc793"/> for the definition of the TCP 
           source port field.  See <xref type="rfc" data="rfc4960"/> for the definition of 
           SCTP.     
-          See <xref type="rfc" data="rfc3022"/> for the definition of NAPT.  See <xref type="rfc" data="rfc3234"/> for the definition of midleboxes. 
+          See <xref type="rfc" data="rfc3022"/> for the definition of NAPT.  See <xref type="rfc" data="rfc3234"/> for the definition of middleboxes. 
           Additional information on defined UDP and TCP port numbers can 
           be found at http://www.iana.org/assignments/port-numbers.   
         </paragraph>
@@ -4712,7 +4712,7 @@
          The definition of this Information Element is identical to the
          definition of Information Element 'mplsTopLabelExp', except
          that it reports a potentially modified value caused by a
-         midlebox function after the packet passed the Observation
+         middlebox function after the packet passed the Observation
          Point.
          </paragraph>
       </description>
@@ -5115,7 +5115,7 @@
         <paragraph>
           The definition of this Information Element is identical to the 
           definition of Information Element 'dot1qVlanId', except that it 
-          reports a potentially modified value caused by a midlebox 
+          reports a potentially modified value caused by a middlebox 
           function after the packet passed the Observation Point.  
         </paragraph>
       </description>
@@ -5139,7 +5139,7 @@
           The definition of this Information Element is identical to the 
           definition of Information Element 'dot1qCustomerVlanId', except 
           that it reports a potentially modified value caused by a 
-          midlebox function after the packet passed the Observation Point. 
+          middlebox function after the packet passed the Observation Point. 
         </paragraph>
       </description>
       <references>
@@ -5183,7 +5183,7 @@
         <paragraph>
           The definition of this Information Element is identical to the         
           definition of Information Element 'ipPrecedence', except that 
-          it reports a potentially modified value caused by a midlebox
+          it reports a potentially modified value caused by a middlebox
           function after the packet passed the Observation Point.
         </paragraph>
       </description>
@@ -5666,11 +5666,11 @@
       <description>
         <paragraph>The definition of this Information Element is identical to
           the definition of Information Element 'sourceIPv6Address', except that
-          it reports a modified value caused by a NAT64 midlebox function after
+          it reports a modified value caused by a NAT64 middlebox function after
           the packet passed the Observation Point.
           
           See [RFC2460] for the definition of the Source Address field in the IPv6
-          header. See [RFC3234] for the definition of midleboxes. See
+          header. See [RFC3234] for the definition of middleboxes. See
           http://tools.ietf.org/html/draft-ietf-behave-v6v4-xlate-stateful-12 for
           nat64 specification.
         </paragraph>
@@ -5686,11 +5686,11 @@
       <description>
         <paragraph>The definition of this Information Element is identical to
           the definition of Information Element 'destinationIPv6Address', except
-          that it reports a modified value caused by a NAT64 midlebox function
+          that it reports a modified value caused by a NAT64 middlebox function
           after the packet passed the Observation Point.
           
           See [RFC2460] for the definition of the Destination Address field in the
-          IPv6 header. See [RFC3234] for the definition of midleboxes. See
+          IPv6 header. See [RFC3234] for the definition of middleboxes. See
           http://tools.ietf.org/html/draft-ietf-behave-v6v4-xlate-stateful-12 for
           nat64 specification.
         </paragraph>

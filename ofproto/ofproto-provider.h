@@ -1139,7 +1139,7 @@ struct ofproto_class {
      * function will be called afterward).
      *
      * ->port_dump_done() allows the implementation to release resources used
-     * for iteration.  The caller might decide to stop iteration in the midle
+     * for iteration.  The caller might decide to stop iteration in the middle
      * by calling this function before ->port_dump_next() returns nonzero.
      *
      * Usage Example

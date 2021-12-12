@@ -132,7 +132,7 @@
           Additionally, <code>ovs-vswitchd</code> is prevented from connecting
           to controllers when this value is set to <code>true</code>. This
           prevents controllers from making changes to the flow table in the
-          midle of flow restoration, which could result in undesirable
+          middle of flow restoration, which could result in undesirable
           intermediate states. Once this value has been set to
           <code>false</code> and the desired flow state has been
           restored, <code>ovs-vswitchd</code> will be able to reconnect to
@@ -6382,7 +6382,7 @@ ovs-vsctl add-port br0 p0 -- set Interface p0 type=patch options:peer=p1 \
       it will immediately drop the connection and reconnect, and from then
       on all SSL connections must be authenticated by a certificate signed
       by the CA certificate thus obtained.  <em>This option exposes the
-      SSL connection to a man-in-the-midle attack obtaining the initial
+      SSL connection to a man-in-the-middle attack obtaining the initial
       CA certificate.</em>  It may still be useful for bootstrapping.
     </column>
 

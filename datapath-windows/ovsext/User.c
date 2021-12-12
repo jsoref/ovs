@@ -1274,7 +1274,7 @@ OvsPendPacketCmdHandler(POVS_USER_PARAMS_CONTEXT usrParamsCtx,
 
 /*
  * --------------------------------------------------------------------------
- * Handler for reading missed pacckets from the driver event queue. This
+ * Handler for reading missed packets from the driver event queue. This
  * handler is executed when user modes issues a socket receive on a socket
  * --------------------------------------------------------------------------
  */

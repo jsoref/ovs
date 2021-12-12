@@ -220,7 +220,7 @@ sflow_get_dp_stats(struct dpif_sflow *ds OVS_UNUSED,
 }
 
 /* If there are multiple bridges defined then we need some
-   minimal artibration to decide which one should send the
+   minimal arbitration to decide which one should send the
    global counters.  This function allows each sub-agent to
    ask if he should do it or not. */
 static bool

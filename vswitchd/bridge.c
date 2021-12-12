@@ -181,7 +181,7 @@ struct datapath {
 /* All bridges, indexed by name. */
 static struct hmap all_bridges = HMAP_INITIALIZER(&all_bridges);
 
-/* All datapath configuartions, indexed by type. */
+/* All datapath configurations, indexed by type. */
 static struct hmap all_datapaths = HMAP_INITIALIZER(&all_datapaths);
 
 /* OVSDB IDL used to obtain configuration. */

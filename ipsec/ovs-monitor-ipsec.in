@@ -1090,7 +1090,7 @@ class IPsecMonitor(object):
 
         if not is_valid:
             vlog.warn("The cert and key configuration is not valid. "
-                "The valid configuations are 1): certificate, private_key "
+                "The valid configurations are 1): certificate, private_key "
                 "and ca_cert are not set; or 2): certificate and "
                 "private_key are all set.")
         else:

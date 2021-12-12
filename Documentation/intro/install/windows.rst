@@ -759,7 +759,7 @@ Create the ovsdb-server service and start it:
 
 .. tip::
 
-   One of the common issues with creating a Windows service is with mungled
+   One of the common issues with creating a Windows service is with mangled
    paths.  You can make sure that the correct path has been registered with the
    Windows services manager by running:
 

@@ -219,7 +219,7 @@ typedef struct _SFLExtended_nat {
     SFLAddress dst;    /* Destination address */
 } SFLExtended_nat;
 
-/* additional Extended MPLS stucts */
+/* additional Extended MPLS struts */
 
 typedef struct _SFLExtended_mpls_tunnel {
     SFLString tunnel_lsp_name;  /* Tunnel name */

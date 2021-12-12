@@ -1195,7 +1195,7 @@ AT_CAPTURE_FILE([ovsdb-client-nonblock.err])
 
 # Start an ovsdb-client monitoring all changes to the database,
 # By default, it is non-blocking, and will get update message
-# for each ovsdb-server transaactions.
+# for each ovsdb-server transactions.
 AT_CHECK([ovsdb-client --detach --no-chdir --pidfile=nonblock.pid monitor ALL >ovsdb-client-nonblock.out 2>ovsdb-client-nonblock.err])
 
 # Start an ovsdb-client monitoring all changes to the database,

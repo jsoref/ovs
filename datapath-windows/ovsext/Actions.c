@@ -528,9 +528,9 @@ OvsCompleteNBLForwardingCtx(OvsForwardingContext *ovsFwdCtx,
  * OvsDoFlowLookupOutput --
  *     Function to be used for the second stage of a tunneling workflow, ie.:
  *     - On the encapsulated packet on Tx path, to do a flow extract, flow
- *       lookup and excuting the actions.
+ *       lookup and executing the actions.
  *     - On the decapsulated packet on Rx path, to do a flow extract, flow
- *       lookup and excuting the actions.
+ *       lookup and executing the actions.
  *
  *     XXX: It is assumed that the NBL in 'ovsFwdCtx' is owned by OVS. This is
  *     until the new buffer management framework is adopted.

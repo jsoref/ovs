@@ -1293,7 +1293,7 @@ InitOvsVportCommon(POVS_SWITCH_CONTEXT switchContext,
 
 /*
  * --------------------------------------------------------------------------
- * Provides functionality that is partly complementatry to
+ * Provides functionality that is partly complementary to
  * InitOvsVportCommon()/UpdateSwitchCtxWithVport().
  *
  * 'hvDelete' indicates if caller is removing the vport as a result of the

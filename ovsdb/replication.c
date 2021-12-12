@@ -292,7 +292,7 @@ replication_run(void)
                     VLOG_WARN("unexpected schema %s", schema->name);
                     state = RPL_S_ERR;
                 } else if (!ovsdb_schema_equal(schema, rdb->db->schema)) {
-                    /* Schmea version mismatch. */
+                    /* Schema version mismatch. */
                     VLOG_INFO("Schema version mismatch, checking if %s can "
                               "still be replicated or not.",
                               schema->name);

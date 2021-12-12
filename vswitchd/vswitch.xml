@@ -2596,7 +2596,7 @@
             A client should ideally set this column's value in the same
             database transaction that it uses to create the interface.  Open
             vSwitch version 2.1 and later will honor a later request for a
-            specific port number, althuogh it might confuse some controllers:
+            specific port number, although it might confuse some controllers:
             OpenFlow does not have a way to announce a port number change, so
             Open vSwitch represents it over OpenFlow as a port deletion
             followed immediately by a port addition.

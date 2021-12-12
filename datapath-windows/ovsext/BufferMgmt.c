@@ -373,7 +373,7 @@ OvsDumpNetBufferList(PNET_BUFFER_LIST nbl)
  *       NBL + NB + MBL + Data + Context
  *    Please note:
  *       * Forwarding Context is allocated, but forwarding detail information
- *       is not initailized.
+ *       is not initialized.
  *       * The headroom can not be larger than OVS_DEFAULT_HEADROOM_SIZE(128
  *       byte).
  * --------------------------------------------------------------------------

@@ -120,7 +120,7 @@ CalculateOnesComplement(UINT8 *start,
  *   Given the start point, and length, calculate the checksum
  *   as 1's complement of 1's complement.
  *
- *   This assume the checksum field is initailized properly.
+ *   This assume the checksum field is initialized properly.
  *
  * Input Parameter:
  *    ptr:  point to the data to be checksummed

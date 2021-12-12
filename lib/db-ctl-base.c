@@ -49,7 +49,7 @@ VLOG_DEFINE_THIS_MODULE(db_ctl_base);
  * another table, the referred table must also be defined as an entry in
  * in 'cmd_show_tables[]'.
  *
- * The definition must end with an all-NULL entry.  It is initalized once
+ * The definition must end with an all-NULL entry.  It is initialized once
  * when ctl_init() is called.
  *
  * */

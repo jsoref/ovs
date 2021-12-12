@@ -186,7 +186,7 @@ usage(void)
            "  evaluate-conditions TABLE [CONDITION,...] [ROW,...]\n"
            "    test CONDITIONS on TABLE against each ROW, print results\n"
            "  evaluate-conditions-any TABLE [CONDITION,...] [ROW,...]\n"
-           "    test CONDITIONS to match any of the CONDITONS on TABLE\n"
+           "    test CONDITIONS to match any of the CONDITIONS on TABLE\n"
            "    against each ROW, print results\n"
            "  compare-conditions TABLE [CONDITION,...]\n"
            "    mutually compare all of the CONDITION, print results for\n"

@@ -143,7 +143,7 @@ v2.15.0 - 15 Feb 2021
        that allows configuring the MAC address of a VF representor.
      * Add generic IP protocol support to conntrack. With this change, all
        none UDP, TCP, and ICMP traffic will be treated as general L3
-       traffic, i.e. using 3 tupples.
+       traffic, i.e. using 3 tuples.
      * Add parameters 'pmd-auto-lb-load-threshold' and
        'pmd-auto-lb-improvement-threshold' to configure PMD auto load balance
        behaviour.

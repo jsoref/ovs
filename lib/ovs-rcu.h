@@ -68,7 +68,7 @@
  *
  * Please note that while a postponed function call is guaranteed to happen
  * after the next time all participating threads have quiesced at least once,
- * there is no quarantee that all postponed functions are called as early as
+ * there is no guarantee that all postponed functions are called as early as
  * possible, or that the functions postponed by different threads would be
  * called in the order the registrations took place.  In particular, even if
  * two threads provably postpone a function each in a specific order, the

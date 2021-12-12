@@ -707,7 +707,7 @@
          iterations.
         </p>
         <p>
-         The defaul value is 1 min. If configured to 0 then it would be
+         The default value is 1 min. If configured to 0 then it would be
          converted to default value i.e. 1 min
         </p>
         <p>

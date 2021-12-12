@@ -960,7 +960,7 @@ struct check_pkt_len_arg {
  * onto the packet.
  * @OVS_ACTION_ATTR_POP_VLAN: Pop the outermost 802.1Q or 802.1ad header
  * from the packet.
- * @OVS_ACTION_ATTR_SAMPLE: Probabilitically executes actions, as specified in
+ * @OVS_ACTION_ATTR_SAMPLE: Probabilistically executes actions, as specified in
  * the nested %OVS_SAMPLE_ATTR_* attributes.
  * @OVS_ACTION_ATTR_SET: Replaces the contents of an existing header.  The
  * single nested %OVS_KEY_ATTR_* attribute specifies a header to modify and its

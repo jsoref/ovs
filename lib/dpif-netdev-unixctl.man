@@ -50,7 +50,7 @@ is disabled. The run-time overhead, when enabled, is in the order of 1%.
 .IP \(em
 used cycles
 .IP \(em
-forwared packets
+forwarded packets
 .IP \(em
 number of rx batches
 .IP \(em

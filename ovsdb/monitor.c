@@ -286,7 +286,7 @@ compare_ovsdb_monitor_column(const void *a_, const void *b_)
     const struct ovsdb_monitor_column *a = a_;
     const struct ovsdb_monitor_column *b = b_;
 
-    /* put all monitored columns at the begining */
+    /* put all monitored columns at the beginning */
     if (a->monitored != b->monitored) {
         return a->monitored ? -1 : 1;
     }

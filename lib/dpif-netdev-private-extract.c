@@ -246,7 +246,7 @@ dpif_miniflow_extract_autovalidator(struct dp_packet_batch *packets,
         atomic_store_relaxed(pmd_func, (uintptr_t) default_func);
         VLOG_ERR("Invalid key size supplied, Key_size: %d less than"
                  "batch_size:  %" PRIuSIZE"\n", keys_size, cnt);
-        VLOG_ERR("Autovalidatior is disabled.\n");
+        VLOG_ERR("Autovalidator is disabled.\n");
         return 0;
     }
 

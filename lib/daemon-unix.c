@@ -868,7 +868,7 @@ daemon_become_new_user__(bool access_datapath)
     }
 }
 
-/* Noramlly, user switch is embedded within daemonize_start().
+/* Normally, user switch is embedded within daemonize_start().
  * However, there in case the user switch needs to be done
  * before daemonize_start(), the following API can be used.  */
 void

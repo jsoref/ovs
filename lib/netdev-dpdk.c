@@ -1617,7 +1617,7 @@ netdev_dpdk_configure_xstats(struct netdev_dpdk *dev)
                                             sizeof *dev->rte_xstats_names);
 
             if (dev->rte_xstats_names) {
-                /* Retreive xstats names */
+                /* Retrieve xstats names */
                 rte_xstats_len =
                         rte_eth_xstats_get_names(dev->port_id,
                                                  dev->rte_xstats_names,
@@ -1640,7 +1640,7 @@ netdev_dpdk_configure_xstats(struct netdev_dpdk *dev)
                 rte_xstats = xmalloc(rte_xstats_len * sizeof *rte_xstats);
                 memset(rte_xstats, 0xff, sizeof *rte_xstats * rte_xstats_len);
 
-                /* Retreive xstats values */
+                /* Retrieve xstats values */
                 if (rte_eth_xstats_get(dev->port_id, rte_xstats,
                                        rte_xstats_len) > 0) {
                     dev->rte_xstats_ids_size = 0;
@@ -3136,7 +3136,7 @@ netdev_dpdk_get_stats(const struct netdev *netdev, struct netdev_stats *stats)
     rte_xstats_names = xcalloc(rte_xstats_len, sizeof *rte_xstats_names);
     rte_xstats = xcalloc(rte_xstats_len, sizeof *rte_xstats);
 
-    /* Retreive xstats names */
+    /* Retrieve xstats names */
     rte_xstats_new_len = rte_eth_xstats_get_names(dev->port_id,
                                                   rte_xstats_names,
                                                   rte_xstats_len);
@@ -3145,7 +3145,7 @@ netdev_dpdk_get_stats(const struct netdev *netdev, struct netdev_stats *stats)
                   dev->port_id);
         goto out;
     }
-    /* Retreive xstats values */
+    /* Retrieve xstats values */
     memset(rte_xstats, 0xff, sizeof *rte_xstats * rte_xstats_len);
     rte_xstats_ret = rte_eth_xstats_get(dev->port_id, rte_xstats,
                                         rte_xstats_len);

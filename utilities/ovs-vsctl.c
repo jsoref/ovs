@@ -2787,7 +2787,7 @@ vsctl_parent_process_info(void)
     parent_pid = getppid();
     ds_init(&s);
 
-    /* Retrive the command line of the parent process, except the init
+    /* Retrieve the command line of the parent process, except the init
      * process since /proc/0 does not exist. */
     if (parent_pid) {
         char *procfile;

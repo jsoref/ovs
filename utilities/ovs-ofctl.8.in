@@ -1048,7 +1048,7 @@ case the effect is to remove all buckets from the group.
 .IP \fBfirst\fR
 Operate on the first bucket present in the group.
 In the case of the \fBinsert-buckets\fR command the effect is to
-insert new bucets just before the first bucket already present in the group;
+insert new buckets just before the first bucket already present in the group;
 or to replace the buckets of the group if there are no buckets already present
 in the group.
 In the case of the \fBremove-buckets\fR command the effect is to
@@ -1057,7 +1057,7 @@ buckets present in the group.
 .IP \fBlast\fR
 Operate on the last bucket present in the group.
 In the case of the \fBinsert-buckets\fR command the effect is to
-insert new bucets just after the last bucket already present in the group;
+insert new buckets just after the last bucket already present in the group;
 or to replace the buckets of the group if there are no buckets already present
 in the group.
 In the case of the \fBremove-buckets\fR command the effect is to

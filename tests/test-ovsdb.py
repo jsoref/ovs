@@ -598,7 +598,7 @@ def idl_set(idl, commands, step):
         sys.stdout.write(", increment=%d" % txn.get_increment_new_value())
     if events:
         # Event notifications from operations in a single transaction are
-        # not in a gauranteed order due to update messages being dicts
+        # not in a guaranteed order due to update messages being dicts
         sys.stdout.write(", events=" + ", ".join(sorted(events)))
     sys.stdout.write("\n")
     sys.stdout.flush()

@@ -163,7 +163,7 @@ ovsdb_parse_version(const char *s, struct ovsdb_version *version)
 }
 
 /* Returns true if 's' is a version string in the format "<x>.<y>.<z>",
- * otherwie false. */
+ * otherwise false. */
 bool
 ovsdb_is_valid_version(const char *s)
 {

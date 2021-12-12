@@ -1093,7 +1093,7 @@ dpdk_eth_dev_init(struct netdev_dpdk *dev)
     int diag;
     int n_rxq, n_txq;
     uint32_t tx_tso_offload_capa = DPDK_TX_TSO_OFFLOAD_FLAGS;
-    uint32_t rx_chksm_offload_capa = DEV_RX_OFFLOAD_UDP_CKSUM |
+    uint32_t rx_chksum_offload_capa = DEV_RX_OFFLOAD_UDP_CKSUM |
                                      DEV_RX_OFFLOAD_TCP_CKSUM |
                                      DEV_RX_OFFLOAD_IPV4_CKSUM;
 
@@ -1106,8 +1106,8 @@ dpdk_eth_dev_init(struct netdev_dpdk *dev)
         dev->hw_ol_features &= ~NETDEV_RX_HW_CRC_STRIP;
     }
 
-    if ((info.rx_offload_capa & rx_chksm_offload_capa) !=
-            rx_chksm_offload_capa) {
+    if ((info.rx_offload_capa & rx_chksum_offload_capa) !=
+            rx_chksum_offload_capa) {
         VLOG_WARN("Rx checksum offload is not supported on port "
                   DPDK_PORT_ID_FMT, dev->port_id);
         dev->hw_ol_features &= ~NETDEV_RX_CHECKSUM_OFFLOAD;

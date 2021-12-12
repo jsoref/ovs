@@ -1881,7 +1881,7 @@ OvsOutputUserspaceAction(OvsForwardingContext *ovsFwdCtx,
     /* Indicate the packet is from egress-tunnel direction */
     egrTunAttr = NlAttrFindNested(attr, OVS_USERSPACE_ATTR_EGRESS_TUN_PORT);
 
-    /* Fill tunnel key to export to usersspace to calculate the template id */
+    /* Fill tunnel key to export to userspace to calculate the template id */
     if (egrTunAttr) {
         RtlZeroMemory(&tunKey,  sizeof tunKey);
         RtlCopyMemory(&tunKey, &ovsFwdCtx->tunKey, sizeof tunKey);

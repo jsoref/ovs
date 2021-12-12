@@ -1047,7 +1047,7 @@ OvsTunnelFilterRequestPush(POVS_TUNFLT_REQUEST_LIST listRequests,
         if (irp->Cancel) {
             /*
              * The IRP has already been cancelled.
-             * Determine wheather the Cancel routine has started to run.
+             * Determine whether the Cancel routine has started to run.
              */
             oldCancelRoutine = IoSetCancelRoutine(irp, NULL);
             if (oldCancelRoutine) {

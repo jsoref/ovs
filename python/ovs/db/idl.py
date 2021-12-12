@@ -2025,7 +2025,7 @@ class SchemaHelper(object):
         """Creates a new Schema object.
 
         'location' file path to ovs schema. None means default location
-        'schema_json' schema in json preresentation in memory
+        'schema_json' schema in json presentation in memory
         """
 
         if location and schema_json:

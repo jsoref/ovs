@@ -3597,7 +3597,7 @@ ofproto_packet_out_init(struct ofproto *ofproto,
     /* Ensure that the L3 header is 32-bit aligned. */
     opo->packet = dp_packet_clone_data_with_headroom(po->packet,
                                                      po->packet_len, 2);
-    /* Take the received packet_tpye as packet_type of the packet. */
+    /* Take the received packet_type as packet_type of the packet. */
     opo->packet->packet_type = po->flow_metadata.flow.packet_type;
 
     /* Store struct flow. */

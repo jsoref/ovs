@@ -1045,7 +1045,7 @@ dpif_netlink_port_add_compat(struct dpif_netlink *dpif, struct netdev *netdev,
 
     if (ovs_type == OVS_VPORT_TYPE_NETDEV) {
 #ifdef _WIN32
-        /* XXX : Map appropiate Windows handle */
+        /* XXX : Map appropriate Windows handle */
 #else
         netdev_linux_ethtool_set_flag(netdev, ETH_FLAG_LRO, "LRO", false);
 #endif

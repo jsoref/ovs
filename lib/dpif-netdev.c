@@ -2388,7 +2388,7 @@ megaflow_to_mark_associate(const ovs_u128 *mega_ufid, uint32_t mark)
                 CONST_CAST(struct cmap_node *, &data->node), hash);
 }
 
-/* disassociate meagaflow with a mark */
+/* disassociate megaflow with a mark */
 static void
 megaflow_to_mark_disassociate(const ovs_u128 *mega_ufid)
 {

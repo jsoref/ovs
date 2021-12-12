@@ -4376,7 +4376,7 @@ ofproto_dpif_credit_table_stats(struct ofproto_dpif *ofproto, uint8_t table_id,
 
 /* Look up 'flow' in 'ofproto''s classifier version 'version', starting from
  * table '*table_id'.  Returns the rule that was found, which may be one of the
- * special rules according to packet miss hadling.  If 'may_packet_in' is
+ * special rules according to packet miss handling.  If 'may_packet_in' is
  * false, returning of the miss_rule (which issues packet ins for the
  * controller) is avoided.  Updates 'wc', if nonnull, to reflect the fields
  * that were used during the lookup.

@@ -79,7 +79,7 @@ function install_kernel()
     if [ "$AFXDP" ]; then
         sudo make headers_install INSTALL_HDR_PATH=/usr
         pushd tools/lib/bpf/
-        # Bulding with gcc because there are some issues in make files
+        # Building with gcc because there are some issues in make files
         # that breaks building libbpf with clang on Travis.
         CC=gcc sudo make install
         CC=gcc sudo make install_headers

@@ -920,7 +920,7 @@ idl SCHEMA SERVER [?T1:C1,C2...[?T2:C1,C2,...]...] [TRANSACTION...]
       ?<table-name>:<column-name>,<column-name>,...
   e.g.:
       ?simple:b - Monitor column "b" in table "simple"
-  Entries for multiple tables are seperated by "?":
+  Entries for multiple tables are separated by "?":
       ?<table-name>:<column-name>,...?<table-name>:<column-name>,...
   e.g.:
       ?simple:b?link1:i,k - Monitor column "b" in table "simple",

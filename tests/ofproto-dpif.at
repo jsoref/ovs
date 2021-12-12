@@ -608,7 +608,7 @@ Datapath actions: 10,set(ipv4(src=192.168.3.91)),11,set(ipv4(src=192.168.3.90)),
 OVS_VSWITCHD_STOP
 AT_CLEANUP
 
-AT_SETUP([ofproto-dpif - modify IPv6 Neighbor Solitication (ND)])
+AT_SETUP([ofproto-dpif - modify IPv6 Neighbor Solicitation (ND)])
 OVS_VSWITCHD_START
 add_of_ports br0 1 10 11 12 13
 AT_DATA([flows.txt], [dnl

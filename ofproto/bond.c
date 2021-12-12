@@ -1956,7 +1956,7 @@ choose_output_member(const struct bond *bond, const struct flow *flow,
     balance = bond->balance;
     if (bond->lacp_status == LACP_CONFIGURED) {
         /* LACP has been configured on this bond but negotiations were
-         * unsuccussful. If lacp_fallback_ab is enabled use active-
+         * unsuccessful. If lacp_fallback_ab is enabled use active-
          * backup mode else drop all traffic. */
         if (!bond->lacp_fallback_ab) {
             return NULL;

@@ -852,7 +852,7 @@ static void
 daemon_become_new_user__(bool access_datapath)
 {
     /* If vlog file has been created, change its owner to the non-root user
-     * as specifed by the --user option.  */
+     * as specified by the --user option.  */
     vlog_change_owner_unix(uid, gid);
 
     if (LINUX) {

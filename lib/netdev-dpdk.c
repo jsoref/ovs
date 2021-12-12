@@ -737,7 +737,7 @@ dpdk_mp_create(struct netdev_dpdk *dev, int mtu, bool per_port_mp)
         /* If there is a size discrepancy, add padding to mbuf_priv_data_len.
          * This maintains mbuf size cache alignment, while also honoring RX
          * buffer alignment in the data portion of the mbuf. If this adjustment
-         * is not made, there is a possiblity later on that for an element of
+         * is not made, there is a possibility later on that for an element of
          * the mempool, buf, buf->data_len < (buf->buf_len - buf->data_off).
          * This is problematic in the case of multi-segment mbufs, particularly
          * when an mbuf segment needs to be resized (when [push|popp]ing a VLAN

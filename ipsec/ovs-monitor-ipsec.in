@@ -1080,7 +1080,7 @@ class IPsecMonitor(object):
             pki[2] = row.other_config.get("ca_cert")
             skb_mark = row.other_config.get("ipsec_skb_mark")
 
-        # Test whether it's a valid configration
+        # Test whether it's a valid configuration
         if pki[0] and pki[1]:
             pki[3] = self._get_cn_from_cert(pki[0])
             if pki[3]:

@@ -112,7 +112,7 @@ set_no_chdir(void)
     chdir_ = false;
 }
 
-/* Normally, daemonize() or damonize_start() will terminate the program with a
+/* Normally, daemonize() or daemonize_start() will terminate the program with a
  * message if a locked pidfile already exists.  If this function is called, an
  * existing pidfile will be replaced, with a warning. */
 void

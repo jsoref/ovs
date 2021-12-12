@@ -3999,7 +3999,7 @@ dpif_netlink_meter_transact(struct ofpbuf *request, struct ofpbuf **replyp,
         || !nl_policy_parse(*replyp, 0, reply_policy, a, size_a)) {
         static struct vlog_rate_limit rl = VLOG_RATE_LIMIT_INIT(1, 5);
         VLOG_DBG_RL(&rl,
-                    "Kernel module response to meter tranaction is invalid");
+                    "Kernel module response to meter transaction is invalid");
         return EINVAL;
     }
     return 0;

@@ -906,7 +906,7 @@ OvsOutputForwardingCtx(OvsForwardingContext *ovsFwdCtx)
                                           ovsFwdCtx->completionList,
                                           &ovsFwdCtx->layers, FALSE);
             if (status != NDIS_STATUS_SUCCESS) {
-                dropReason = L"Dropped due to resouces.";
+                dropReason = L"Dropped due to resources.";
                 goto dropit;
             }
         }
@@ -1089,7 +1089,7 @@ OvsPopFieldInPacketBuf(OvsForwardingContext *ovsFwdCtx,
                                   NULL, &ovsFwdCtx->layers, FALSE);
     if (status != NDIS_STATUS_SUCCESS) {
         OvsCompleteNBLForwardingCtx(ovsFwdCtx,
-                                    L"Dropped due to resouces");
+                                    L"Dropped due to resources");
         return NDIS_STATUS_RESOURCES;
     }
 

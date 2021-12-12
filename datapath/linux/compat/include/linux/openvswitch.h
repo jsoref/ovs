@@ -920,7 +920,7 @@ enum ovs_nat_attr {
  * @OVS_CHECK_PKT_LEN_ATTR_PKT_LEN: u16 Packet length to check for.
  * @OVS_CHECK_PKT_LEN_ATTR_USERSPACE_COND: u8 comparison condition to send
  * the packet to userspace. One of OVS_CHECK_PKT_LEN_COND_*.
- * @OVS_CHECK_PKT_LEN_ATTR_USERPACE - Nested OVS_USERSPACE_ATTR_* actions.
+ * @OVS_CHECK_PKT_LEN_ATTR_USERSPACE - Nested OVS_USERSPACE_ATTR_* actions.
  */
 enum ovs_check_pkt_len_attr {
 	OVS_CHECK_PKT_LEN_ATTR_UNSPEC,

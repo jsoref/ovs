@@ -500,7 +500,7 @@ do_diff_data(struct ovs_cmdl_context *ctx)
         /* Generate the diff.  */
         ovsdb_datum_diff(&diff, &old, &new, &type);
 
-        /* Apply diff to 'old' to create'reincarnation'. */
+        /* Apply diff to 'old' to create 'reincarnation'. */
         error = ovsdb_datum_apply_diff(&reincarnation, &old, &diff, &type);
         if (error) {
             char *string = ovsdb_error_to_string_free(error);

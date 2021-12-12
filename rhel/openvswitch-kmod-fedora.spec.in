@@ -70,11 +70,11 @@ for kv in %{kversion}; do
     for module in $RPM_BUILD_ROOT/lib/modules/${kv}/extra/openvswitch/*.ko
     do
         modname="$(basename ${module})"
-        grep -qsPo "^\s*override ${modname%.ko} \* extra\/openvwitch" \
+        grep -qsPo "^\s*override ${modname%.ko} \* extra\/openvswitch" \
             $RPM_BUILD_ROOT/etc/depmod.d/kmod-openvswitch.conf || \
             echo "override ${modname%.ko} * extra/openvswitch" >> \
             $RPM_BUILD_ROOT/etc/depmod.d/kmod-openvswitch.conf
-        grep -qsPo "^\s*override ${modname%.ko} \* weak-updates\/openvwitch" \
+        grep -qsPo "^\s*override ${modname%.ko} \* weak-updates\/openvswitch" \
             $RPM_BUILD_ROOT/etc/depmod.d/kmod-openvswitch.conf || \
             echo "override ${modname%.ko} * weak-updates/openvswitch" >> \
             $RPM_BUILD_ROOT/etc/depmod.d/kmod-openvswitch.conf

@@ -1654,7 +1654,7 @@ OvsPortFillInfo(POVS_USER_PARAMS_CONTEXT usrParamsCtx,
     msgOutTmp.nlMsg.nlmsgType = OVS_WIN_NL_VPORT_FAMILY_ID;
     msgOutTmp.nlMsg.nlmsgFlags = 0;  /* XXX: ? */
 
-    /* driver intiated messages should have zerp seq number*/
+    /* driver initiated messages should have zerp seq number*/
     msgOutTmp.nlMsg.nlmsgSeq = 0;
     msgOutTmp.nlMsg.nlmsgPid = usrParamsCtx->ovsInstance->pid;
 
@@ -1746,7 +1746,7 @@ OvsReadEventCmdHandler(POVS_USER_PARAMS_CONTEXT usrParamsCtx,
             goto cleanup;
         }
 
-        /* Driver intiated messages should have zero seq number */
+        /* Driver initiated messages should have zero seq number */
         status = OvsCreateNlMsgFromCtEntry(&ctEventEntry.entry,
                                            usrParamsCtx->outputBuffer,
                                            usrParamsCtx->outputLength,

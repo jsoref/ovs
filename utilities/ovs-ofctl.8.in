@@ -303,7 +303,7 @@ case, \fIflow\fR specifies a flow entry in the format described in
 \fBFlow Syntax\fR, below, \fIfile\fR is a text file that contains zero
 or more flows in the same syntax, one per line, and the optional
 \fB\-\-bundle\fR option operates the command as a single atomic
-transation, see option \fB\-\-bundle\fR, below.
+transaction, see option \fB\-\-bundle\fR, below.
 .
 .IP "[\fB\-\-bundle\fR] \fBadd\-flow \fIswitch flow\fR"
 .IQ "[\fB\-\-bundle\fR] \fBadd\-flow \fIswitch \fB\- < \fIfile\fR"
@@ -379,7 +379,7 @@ case, \fIgroup\fR specifies a group entry in the format described in
 \fBGroup Syntax\fR, below, and \fIfile\fR is a text file that contains
 zero or more groups in the same syntax, one per line, and the optional
 \fB\-\-bundle\fR option operates the command as a single atomic
-transation, see option \fB\-\-bundle\fR, below.
+transaction, see option \fB\-\-bundle\fR, below.
 .PP
 The group commands work only with switches that support OpenFlow 1.1
 or later or the Open vSwitch group extensions to OpenFlow 1.0 (added

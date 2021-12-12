@@ -21,7 +21,7 @@
 #    - does not support parsing of nested option
 #      (e.g. ovsdb-tool create [db [schema]]).
 #
-#    - does not support expansion on repeatitive argument
+#    - does not support expansion on repetitive argument
 #      (e.g. ovs-dpctl show [dp...]).
 #
 #    - only support matching on long options, and only in the format

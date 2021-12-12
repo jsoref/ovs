@@ -134,7 +134,7 @@ typedef struct _OVS_TUNFLT_REQUEST {
 } OVS_TUNFLT_REQUEST, *POVS_TUNFLT_REQUEST;
 
 typedef struct _OVS_TUNFLT_REQUEST_LIST {
-    /* SpinLock for syncronizing access to the requests list. */
+    /* SpinLock for synchronizing access to the requests list. */
     NDIS_SPIN_LOCK spinlock;
     /* Head of the requests list. */
     LIST_ENTRY     head;

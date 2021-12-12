@@ -6273,7 +6273,7 @@ dpif_set_support(struct dpif_backer_support *rt_support,
                 *(bool *)field->rt_ptr = true;
                 changed = true;
             } else {
-                ds_put_cstr(ds, "Can not enable features not supported by the datapth");
+                ds_put_cstr(ds, "Can not enable features not supported by the datapath");
             }
         } else if (!strcasecmp(value, "false")) {
             *(bool *)field->rt_ptr = false;

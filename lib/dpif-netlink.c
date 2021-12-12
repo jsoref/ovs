@@ -179,7 +179,7 @@ struct dpif_channel {
 #ifdef _WIN32
 #define VPORT_SOCK_POOL_SIZE 1
 /* On Windows, there is no native support for epoll.  There are equivalent
- * interfaces though, that are not used currently.  For simpicity, a pool of
+ * interfaces though, that are not used currently.  For simplicity, a pool of
  * netlink sockets is used.  Each socket is represented by 'struct
  * dpif_windows_vport_sock'.  Since it is a pool, multiple OVS ports may be
  * sharing the same socket.  In the future, we can add a reference count and

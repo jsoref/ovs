@@ -84,7 +84,7 @@ ct_dpif_dump_start(struct dpif *dpif, struct ct_dpif_dump_state **dump,
  *
  * 'dump' should have been initialized by ct_dpif_dump_start().
  *
- * The function returns 0, if an entry has been dumped succesfully.
+ * The function returns 0, if an entry has been dumped successfully.
  * Otherwise it returns a non-zero value which can be:
  * - EOF: meaning that there are no more entries to dump.
  * - an error value.

@@ -5255,7 +5255,7 @@ ovs-vsctl add-port br0 p0 -- set Interface p0 type=patch options:peer=p1 \
 
     <group title="Asynchronous Messages">
       <p>
-        OpenFlow switches send certain messages to controllers spontanenously,
+        OpenFlow switches send certain messages to controllers spontaneously,
         that is, not in response to any request from the controller.  These
         messages are called ``asynchronous messages.''  These columns allow
         asynchronous messages to be limited or disabled to ensure the best use

@@ -151,7 +151,7 @@ typedef UINT64 IP6UnitLength;
 #define ND_ROUTER_SOLICIT          133
 #define ND_ROUTER_ADVERT           134
 #define ND_NEIGHBOR_SOLICIT        135     /* neighbor solicitation */
-#define ND_NEIGHBOR_ADVERT         136     /* neighbor advertisment */
+#define ND_NEIGHBOR_ADVERT         136     /* neighbor advertisement */
 #define ND_REDIRECT                137
 
 

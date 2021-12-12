@@ -5983,7 +5983,7 @@ AT_CHECK([ovs-appctl ofproto/trace ovs-dummy "$odp_flow"], [0], [stdout])
 AT_CHECK([tail -1 stdout], [0], [dnl
 Datapath actions: 2
 ])
-# Test commmand: ofproto/trace br_name br_flow
+# Test command: ofproto/trace br_name br_flow
 AT_CHECK([ovs-appctl ofproto/trace br0 "$br_flow"], [0], [stdout])
 AT_CHECK([tail -1 stdout], [0], [dnl
 Datapath actions: 2

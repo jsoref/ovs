@@ -407,7 +407,7 @@ def idl_set(idl, commands, step):
             elif args[1] == "r":
                 s.r = float(args[2])
             else:
-                sys.stderr.write('"set" comamnd asks for unknown column %s\n'
+                sys.stderr.write('"set" command asks for unknown column %s\n'
                                  % args[2])
                 sys.stderr.exit(1)
         elif name == "insert":

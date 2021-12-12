@@ -26,7 +26,7 @@
  * We can see this framework as a subset of ofpbuf in ovs userspace.
  *
  * This framework is NOT a generic buffer management framework (ofpbuf
- * is a generic buffer mgmt framework) and provides only the functioanlities
+ * is a generic buffer mgmt framework) and provides only the functionalities
  * which would be useful for netlink protocol. Some of the key features are:
  *
  * a. It DOES NOT support automatic buffer reallocation.

@@ -2710,7 +2710,7 @@ dpif_ipfix_bridge_sample(struct dpif_ipfix *di, const struct dp_packet *packet,
     /* Skip BFD packets:
      * Bidirectional Forwarding Detection(BFD) packets are for monitoring
      * the tunnel link status and consumed by ovs itself. No need to
-     * smaple them.
+     * sample them.
      * CF  IETF RFC 5881, BFD control packet is the UDP packet with
      * destination port 3784, and BFD echo packet is the UDP packet with
      * destination port 3785.

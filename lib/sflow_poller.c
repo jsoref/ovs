@@ -76,7 +76,7 @@ void sfl_poller_set_sFlowCpInterval(SFLPoller *poller, u_int32_t sFlowCpInterval
         /* Set the countersCountdown to be a randomly selected value between 1 and
 	   sFlowCpInterval. That way the counter polling will be desynchronised
 	   (on a 200-port switch, polling all the counters in one second could be harmful).
-	   In a large network, even this might not be ideal if time-synchroniziation
+	   In a large network, even this might not be ideal if time-synchronization
 	   between devices is close and counters are always polled on second boundaries. If
 	   1000 different devices all send an sFlow datagram on the same second boundary
 	   it could result in an antisocial burst.

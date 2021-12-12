@@ -239,7 +239,7 @@ atomic_signal_fence(memory_order order)
 
 #if defined(__SSE__)
 /* SSE registers are 128-bit wide, and moving the lowest 64-bits of an SSE
- * register to proerly aligned memory is atomic.  See ATOMIC(TYPE) above. */
+ * register to properly aligned memory is atomic.  See ATOMIC(TYPE) above. */
 #define atomic_store_8__(DST, SRC)                 \
     asm volatile("movq %1,%0 ; # atomic_store_8__" \
                  : "=m" (*DST)   /* 0 */           \

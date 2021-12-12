@@ -1108,7 +1108,7 @@ OvsPopFieldInPacketBuf(OvsForwardingContext *ovsFwdCtx,
         return NDIS_STATUS_FAILURE;
     }
     bufferStart += NET_BUFFER_CURRENT_MDL_OFFSET(curNb);
-    /* XXX At the momemnt !bufferData means it should be treated as VLAN. We
+    /* XXX At the moment !bufferData means it should be treated as VLAN. We
      * should split the function and refactor. */
     if (!bufferData) {
         EthHdr *ethHdr = (EthHdr *)bufferStart;

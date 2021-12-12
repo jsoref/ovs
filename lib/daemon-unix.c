@@ -882,7 +882,7 @@ daemon_become_new_user(bool access_datapath)
     }
 }
 
-/* Return the maximun suggested buffer size for both getpwname_r()
+/* Return the maximum suggested buffer size for both getpwname_r()
  * and getgrnam_r().
  *
  * This size may still not be big enough. in case getpwname_r()

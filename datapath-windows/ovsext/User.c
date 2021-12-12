@@ -870,7 +870,7 @@ OvsGetUpcallMsgSize(PVOID userData,
  *----------------------------------------------------------------------------
  * This function completes the IP Header csum. record the L4 payload offset and
  * if there is a need to calculate the TCP or UDP csum. The actual csum will be
- * calculated simopultaneossly with the copy of the payload to the destination
+ * calculated simultaneously with the copy of the payload to the destination
  * buffer when the packet is read.
  *----------------------------------------------------------------------------
  */

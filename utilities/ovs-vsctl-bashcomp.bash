@@ -499,7 +499,7 @@ declare -A _OVS_VSCTL_ARG_COMPLETION_FUNCS=(
 # $1: Argument type, may include vertical bars to mean OR
 # $2: Beginning of completion
 #
-# Note that this checks for existance in
+# Note that this checks for existence in
 # _OVS_VSCTL_ARG_COMPLETION_FUNCS; if the argument type ($1) is not
 # there it will fail gracefully.
 _ovs_vsctl_possible_completions_of_argument () {

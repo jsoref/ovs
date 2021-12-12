@@ -15,7 +15,7 @@
  */
 
 /* ==========================================================================
- * This is a simple buffer mangement framework specific for netlink protocol.
+ * This is a simple buffer management framework specific for netlink protocol.
  * The name could be confused with ovsext/BufferMgmt.c. Ovsext/BufferMgmt.c
  * deals with buffer mgmt for NBLs. Where as this framework deals with
  * management of buffer that holds a netlink message.

@@ -985,7 +985,7 @@ class Row(object):
       "default" value return by Datum.default() for the column's type.  (It is
       important to know this because the default value may violate constraints
       for the column's type, e.g. the default integer value is 0 even if column
-      contraints require the column's value to be positive.)
+      constraints require the column's value to be positive.)
 
       When a transaction is active, column attributes may also be assigned new
       values.  Committing the transaction will then cause the new value to be

@@ -371,7 +371,7 @@ static const struct mfex_profile mfex_profiles[PROFILE_COUNT] =
 };
 
 
-/* Protocol specific helper functions, for calculating offsets/lenghts. */
+/* Protocol specific helper functions, for calculating offsets/lengths. */
 static int32_t
 mfex_ipv4_set_l2_pad_size(struct dp_packet *pkt, struct ip_header *nh,
                           uint32_t len_from_ipv4)

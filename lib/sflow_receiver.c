@@ -205,7 +205,7 @@ inline static void putString(SFLReceiver *receiver, SFLString *s)
 }
 
 inline static u_int32_t stringEncodingLength(SFLString *s) {
-    // answer in bytes,  so remember to mulitply by 4 after rounding up to nearest 4-byte boundary
+    // answer in bytes,  so remember to multiply by 4 after rounding up to nearest 4-byte boundary
     return 4 + (((s->len + 3) / 4) * 4);
 }
 

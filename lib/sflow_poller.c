@@ -83,7 +83,7 @@ void sfl_poller_set_sFlowCpInterval(SFLPoller *poller, u_int32_t sFlowCpInterval
 	   However when counter-samples are packed into the export datagram they do not
 	   always result in that datagram being sent immediately. It is more likely that
 	   a subsequent packet-sample will be the one that triggers the datagram to be sent.
-	   The packet-sample events are not sychronized to any clock, so that results in
+	   The packet-sample events are not synchronized to any clock, so that results in
 	   excellent desynchronization (http://blog.sflow.com/2009/05/measurement-traffic.html).
 	   Another smoothing factor is that the tick() function called here is usually
 	   driven from a fairly "soft" polling loop rather than a hard real-time event.

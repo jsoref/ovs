@@ -329,7 +329,7 @@ static void sfl_agent_jumpTableRemove(SFLAgent *agent, SFLSampler *sampler)
   fast lookup (pointers cached in hash table).  If there are multiple
   sampler instances for a given ifIndex, then this fn will return
   the one with the lowest instance number.  Since the samplers
-  list is sorted, this means the other instances will be accesible
+  list is sorted, this means the other instances will be accessible
   by following the sampler->nxt pointer (until the ds_class
   or ds_index changes).  This is helpful if you need to offer
   the same flowSample to multiple samplers.

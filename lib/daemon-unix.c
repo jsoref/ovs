@@ -899,7 +899,7 @@ get_sysconf_buffer_size(void)
     errno = 0;
     if ((pwd_bs = sysconf(_SC_GETPW_R_SIZE_MAX)) == -1) {
         if (errno) {
-            VLOG_FATAL("%s: Read initial passwordd struct size "
+            VLOG_FATAL("%s: Read initial password struct size "
                        "failed (%s), aborting. ", pidfile,
                        ovs_strerror(errno));
         }

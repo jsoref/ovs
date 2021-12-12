@@ -125,7 +125,7 @@ struct ipf_list {
     uint8_t state;                 /* Frag list state; see ipf_list_state. */
 };
 
-/* Represents a reassambled packet which typically is passed through
+/* Represents a reassembled packet which typically is passed through
  * conntrack. */
 struct reassembled_pkt {
     struct ovs_list rp_list_node;  /* In struct ipf's
@@ -242,7 +242,7 @@ ipf_completed_list_add(struct ovs_list *frag_complete_list,
     ovs_list_push_back(frag_complete_list, &ipf_list->list_node);
 }
 
-/* Adds a reassmebled packet to the list of reassembled packets, awaiting some
+/* Adds a reassembled packet to the list of reassembled packets, awaiting some
  * processing, such as being sent through conntrack. */
 static void
 ipf_reassembled_list_add(struct ovs_list *reassembled_pkt_list,
@@ -1111,7 +1111,7 @@ ipf_send_expired_frags(struct ipf *ipf, struct dp_packet_batch *pb,
     ovs_mutex_unlock(&ipf->ipf_lock);
 }
 
-/* Adds a reassmebled packet to a packet batch to be processed by the caller.
+/* Adds a reassembled packet to a packet batch to be processed by the caller.
  */
 static void
 ipf_execute_reass_pkts(struct ipf *ipf, struct dp_packet_batch *pb)

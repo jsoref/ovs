@@ -501,7 +501,7 @@ ovs_comp_helper() {
                     if [ -n "$(option_require_arg "${cmd_line_so_far[i]}")" ]; then
                         ((j++))
                         if [ -z "${cmd_line_so_far[j]}" ]; then
-                            printf_stderr "\nOption requires an arugment."
+                            printf_stderr "\nOption requires an argument."
                             return
                         fi
                     fi

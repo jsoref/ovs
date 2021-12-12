@@ -2334,7 +2334,7 @@ out:
         } else if (del_err != ENOENT) {
             VLOG_ERR_RL(&rl, "failed to delete offloaded flow: %s",
                         ovs_strerror(del_err));
-            /* stop proccesing the flow in kernel */
+            /* stop processing the flow in kernel */
             err = 0;
         }
     }

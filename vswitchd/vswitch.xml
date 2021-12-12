@@ -4667,7 +4667,7 @@ ovs-vsctl add-port br0 p0 -- set Interface p0 type=patch options:peer=p1 \
           traffic. It should be noted that when the rte_meter is configured as
           part of QoS there will be a performance overhead as the rte_meter
           itself will consume CPU cycles in order to police traffic. These CPU
-          cycles ordinarily are used for packet proccessing. As such the drop
+          cycles ordinarily are used for packet processing. As such the drop
           in performance will be noticed in terms of overall aggregate traffic
           throughput.
         </dd>

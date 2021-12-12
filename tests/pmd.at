@@ -1005,7 +1005,7 @@ dnl Trigger reconfiguration of the datapath
 AT_CHECK([ovs-vsctl set Interface p1 options:n_rxq=2])
 AT_CHECK([ovs-vsctl set Interface p2 options:n_rxq=2])
 
-dnl Make sure that reconfiguration succeded
+dnl Make sure that reconfiguration succeeded
 AT_CHECK([ovs-appctl dpif-netdev/pmd-rxq-show | parse_pmd_rxq_show], [0], [dnl
 p1 0 0 0
 p1 1 0 0

@@ -1404,7 +1404,7 @@ bridge_configure_netflow(struct bridge *br)
         opts.active_timeout = -1;
     }
 
-    /* Add engine ID to interface number to disambiguate bridgs? */
+    /* Add engine ID to interface number to disambiguate bridges? */
     opts.add_id_to_iface = cfg->add_id_to_interface;
     if (opts.add_id_to_iface) {
         if (opts.engine_id > 0x7f) {

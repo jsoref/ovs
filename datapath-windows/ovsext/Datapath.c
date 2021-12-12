@@ -1702,7 +1702,7 @@ cleanup:
 /*
  * --------------------------------------------------------------------------
  * Handler for reading events from the driver event queue. This handler is
- * executed when user modes issues a socket receive on a socket assocaited
+ * executed when user modes issues a socket receive on a socket associated
  * with the MC group for events.
  * XXX user mode should read multiple events in one system call
  * --------------------------------------------------------------------------

@@ -1219,7 +1219,7 @@ ovsdb_idl_table_get_seqno(const struct ovsdb_idl *idl,
 }
 
 /* For each row that contains tracked columns, IDL stores the most
- * recent IDL change sequence numbers associateed with insert, modify
+ * recent IDL change sequence numbers associated with insert, modify
  * and delete updates to the table.
  */
 unsigned int

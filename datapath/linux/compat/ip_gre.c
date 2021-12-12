@@ -1410,7 +1410,7 @@ int rpl_ipgre_init(void)
 	return 0;
 
 ip_gre_loaded:
-	/* Since GRE only allows single receiver to be registerd,
+	/* Since GRE only allows single receiver to be registered,
 	 * we skip here so only gre transmit works, see:
 	 *
 	 * commit 9f57c67c379d88a10e8ad676426fee5ae7341b14

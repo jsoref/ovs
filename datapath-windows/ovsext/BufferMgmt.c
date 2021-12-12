@@ -1140,7 +1140,7 @@ GetSegmentHeaderInfo(PNET_BUFFER_LIST nbl,
     TCPHdr tcpStorage;
     const TCPHdr *tcp;
 
-    /* Parse the orginal Eth/IP/TCP header */
+    /* Parse the original Eth/IP/TCP header */
     tcp = OvsGetPacketBytes(nbl, sizeof *tcp, hdrInfo->l4Offset, &tcpStorage);
     if (tcp == NULL) {
         return NDIS_STATUS_FAILURE;

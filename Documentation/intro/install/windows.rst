@@ -328,7 +328,7 @@ An alternative way to do the same is to run the following command:
 Generate the Windows installer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To generate the Windows installler run the following command from the top
+To generate the Windows installer run the following command from the top
 source directory:
 
 ::

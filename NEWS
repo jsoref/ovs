@@ -38,7 +38,7 @@ v2.16.0 - 16 Aug 2021
        For more information: ovsdb(7) and Documentation/topics/ovsdb-relay.rst
      * New command line options --record/--replay for ovsdb-server and
        ovsdb-client to record and replay all the incoming transactions,
-       monitors, etc.  More datails in Documentation/topics/record-replay.rst.
+       monitors, etc.  More details in Documentation/topics/record-replay.rst.
      * The Python Idl class now has a cooperative_yield() method that can be
        overridden by an application that uses eventlet / gevent / asyncio with
        the desired yield method (e.g. {eventlet,gevent,asyncio}.sleep(0)) to

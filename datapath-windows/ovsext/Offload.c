@@ -245,7 +245,7 @@ CopyAndCalculateChecksum(UINT8 *dst,
  *   Give IP header, calculate the IP checksum.
  *   We assume IP checksum field is initialized properly
  *
- *  Input Pramater:
+ *  Input Parameter:
  *   ipHdr: IP header start point
  *   length: IP header length (potentially include IP options)
  *   initial: same as CalculateChecksum
@@ -357,7 +357,7 @@ IPv6PseudoChecksum(UINT32 *src,
  *  calculate the new checksum.
  *  Please check relevant RFC for reference.
  *
- *  Input Pramater:
+ *  Input Parameter:
  *     oldSum: old checksum value in checksum field
  *     prev:   previous value of relevant 32 bit field in network
  *             byte order.
@@ -392,7 +392,7 @@ ChecksumUpdate32(UINT16 oldSum,
  *  calculate the new checksum.
  *  Please check relevant RFC for reference.
  *
- *  Input Pramater:
+ *  Input Parameter:
  *     oldSum: old checksum value in checksum field
  *     prev:   previous value of relevant 32 bit field in network
  *             byte order.

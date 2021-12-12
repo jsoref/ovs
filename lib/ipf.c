@@ -955,7 +955,7 @@ ipf_extract_frags_from_batch(struct ipf *ipf, struct dp_packet_batch *pb,
 
 /* In case of DPDK, a memory source check is done, as DPDK memory pool
  * management has trouble dealing with multiple source types.  The
- * check_source paramater is used to indicate when this check is needed. */
+ * check_source parameter is used to indicate when this check is needed. */
 static bool
 ipf_dp_packet_batch_add(struct dp_packet_batch *pb , struct dp_packet *pkt,
                         bool check_source OVS_UNUSED)

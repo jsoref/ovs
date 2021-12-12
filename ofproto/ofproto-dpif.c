@@ -6169,7 +6169,7 @@ struct dpif_support_field {
     enum dpif_support_field_type type;
 };
 
-#define DPIF_SUPPORT_FIELD_INTIALIZER(RT_PTR, BT_PTR, TITLE, TYPE) \
+#define DPIF_SUPPORT_FIELD_INITIALIZER(RT_PTR, BT_PTR, TITLE, TYPE) \
     (struct dpif_support_field) {RT_PTR, BT_PTR, TITLE, TYPE}
 
 static void
@@ -6227,7 +6227,7 @@ dpif_set_support(struct dpif_backer_support *rt_support,
 #define DPIF_SUPPORT_FIELD(TYPE, NAME, TITLE) \
     {\
       struct dpif_support_field *f = xmalloc(sizeof *f);            \
-      *f = DPIF_SUPPORT_FIELD_INTIALIZER(&rt_support->NAME,         \
+      *f = DPIF_SUPPORT_FIELD_INITIALIZER(&rt_support->NAME,        \
                                          &bt_support->NAME,         \
                                          TITLE,                     \
                                          DPIF_SUPPORT_FIELD_##TYPE);\
@@ -6239,7 +6239,7 @@ dpif_set_support(struct dpif_backer_support *rt_support,
 #define ODP_SUPPORT_FIELD(TYPE, NAME, TITLE) \
     {\
         struct dpif_support_field *f = xmalloc(sizeof *f);            \
-        *f = DPIF_SUPPORT_FIELD_INTIALIZER(&rt_support->odp.NAME,     \
+        *f = DPIF_SUPPORT_FIELD_INITIALIZER(&rt_support->odp.NAME,    \
                                            &bt_support->odp.NAME,     \
                                            TITLE,                     \
                                            DPIF_SUPPORT_FIELD_##TYPE);\

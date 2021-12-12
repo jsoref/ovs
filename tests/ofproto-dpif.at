@@ -1080,7 +1080,7 @@ in_port=9,reg0=0xdeadbeef  actions=output:20
 in_port=10,reg1=0xdeadbeef actions=output:21
 in_port=11,reg2=0xeef22dea actions=output:22
 
-dnl Sanilty check all registers
+dnl Sanity check all registers
 in_port=12 actions=load:0x10->NXM_NX_REG0[[]],load:0x11->NXM_NX_REG1[[]],load:0x12->NXM_NX_REG2[[]]
 in_port=13 actions=load:0x13->NXM_NX_REG3[[]],load:0x14->NXM_NX_REG4[[]],load:0x15->NXM_NX_REG5[[]]
 in_port=14 actions=load:0x16->NXM_NX_REG6[[]],load:0x17->NXM_NX_REG7[[]]

@@ -70,7 +70,7 @@
  *     3. New Allocated NBL will have src port set to default port id
  *     4. If original packet has direction flag set, the copied or partial
  *        copied NBL will still be in same direction.
- *     5. When you advance or retreate the buffer, you may need to update
+ *     5. When you advance or retreat the buffer, you may need to update
  *        relevant meta data to keep it consistent.
  *
  * ****************************************************************************

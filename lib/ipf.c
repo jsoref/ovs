@@ -218,7 +218,7 @@ ipf_addr_hash_add(uint32_t hash, const union ipf_addr *addr)
 }
 
 /* Adds a list of fragments to the list tracking expiry of yet to be
- * completed reassembled packets, hence subject to expirty. */
+ * completed reassembled packets, hence subject to expiry. */
 static void
 ipf_expiry_list_add(struct ovs_list *frag_exp_list, struct ipf_list *ipf_list,
                     long long now)

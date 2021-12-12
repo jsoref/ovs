@@ -2411,7 +2411,7 @@ on_exit 'kill `cat ovsdb-server2.pid`'
 
 dnl In this test, test-ovsdb first connects to the server with schema
 dnl idltest2.ovsschema and outputs the presence of tables and columns.
-dnl And then it connectes to the server with the schema idltest.ovsschema
+dnl And then it connects to the server with the schema idltest.ovsschema
 dnl and does the same.
 AT_CHECK([test-ovsdb '-vPATTERN:console:test-ovsdb|%c|%m' -vjsonrpc -t10 dnl
                  idl-table-column-check unix:socket unix:socket2], [0], [dnl

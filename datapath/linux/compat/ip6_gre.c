@@ -646,7 +646,7 @@ drop:
 
 #if LINUX_VERSION_CODE < KERNEL_VERSION(4,7,0)
 #include "gso.h"
-/* gre_handle_offloads() has different return type on older kernsl. */
+/* gre_handle_offloads() has different return type on older kernel. */
 static void gre_nop_fix(struct sk_buff *skb) { }
 
 static void gre_csum_fix(struct sk_buff *skb)

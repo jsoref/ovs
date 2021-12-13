@@ -649,7 +649,7 @@ _ovs_vsctl_trim_compreply() {
 #
 # Parsing up until the command word happens starts with everything
 # valid; as the syntax order of ovs-vsctl is fairly strict, when types
-# of words that preclude other words from happending can turn them
+# of words that preclude other words from happening can turn them
 # off; this is controlled by valid_globals, valid_opts, and
 # valid_commands.  given_opts is used to narrow down which commands
 # are valid based on the previously given options.
